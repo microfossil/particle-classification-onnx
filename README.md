@@ -13,7 +13,9 @@ pip install git+https://github.com/microfossil/particle-classification-onnx
 
 Classify a folder of images using the network_info.xml
 
+```
 miso-onnx classify --network-info path/to/network_info.xml --images path/to/images --output-csv path/to/output.csv --output-json path/to/output.json --device cpu
+```
 
 Use --device cuda for GPU inference, note:
 
