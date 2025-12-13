@@ -10,11 +10,8 @@ import numpy as np
 import onnxruntime as ort
 from tqdm import tqdm
 
-import sys
-
-sys.path.append(str(Path(__file__).parent.parent))
-from data.image_loader import load_and_batch_images_streaming
-from inference.results import ImageClassificationResult, ImageClassificationResults
+from miso_onnx.data.image_loader import load_and_batch_images_streaming
+from miso_onnx.inference.results import ImageClassificationResult, ImageClassificationResults
 
 
 class ImageClassificationPipeline:

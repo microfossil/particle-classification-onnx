@@ -7,8 +7,8 @@ from pathlib import Path
 from typing import Optional, List
 import sys
 
-from data.network_info import NetworkInfo
-from inference.image_classification import ImageClassificationPipeline
+from miso_onnx.data.network_info import NetworkInfo
+from miso_onnx.inference.image_classification import ImageClassificationPipeline
 
 
 def parse_labels(labels_input: str) -> List[str]:
