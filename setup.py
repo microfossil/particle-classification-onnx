@@ -37,7 +37,7 @@ setup(
     author_email="ross.g.marchant@gmail.com",
     url="https://github.com/microfossil/miso-onnx",
     packages=find_packages(),
-    python_requires=">=3.8",
+    python_requires="==3.11",
     install_requires=read_requirements("requirements.txt"),
     entry_points={
         "console_scripts": [
