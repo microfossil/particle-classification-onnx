@@ -238,7 +238,5 @@ def load_and_batch_images_streaming(
         if len(batch_buffer) > 0:
             batch_array = create_batch_array(batch_buffer, input_format)
             yield batch_array, batch_paths_buffer.copy(), errors.copy()
-    
-    # Final yield with empty batch to signal completion and return all errors
-    if len(batch_buffer) == 0:
-        yield None, [], errors
+            batch_buffer.clear()
+            batch_paths_buffer.clear()

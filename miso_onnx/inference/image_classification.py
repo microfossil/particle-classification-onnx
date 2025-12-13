@@ -353,7 +353,7 @@ def main():
     from pathlib import Path
 
     # Add parent directory to path to import NetworkInfo
-    from data.network_info import NetworkInfo
+    from miso_onnx.data.network_info import NetworkInfo
 
     # Example 1: Load network info from XML and create pipeline
     xml_path = r"C:\Users\ross.marchant\data\Files_to_Ross\Files_to_Ross\CNNs\ResNet50_20250521-152437\model_onnx\network_info.xml"

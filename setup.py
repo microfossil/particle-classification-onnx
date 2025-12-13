@@ -29,7 +29,7 @@ long_description = readme_file.read_text(encoding="utf-8") if readme_file.exists
 
 setup(
     name="miso_onnx",
-    version="0.1.3",
+    version="0.1.4",
     description="ONNX-based inference for MISO microfossil classification models",
     long_description=long_description,
     long_description_content_type="text/markdown",
