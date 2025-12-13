@@ -35,23 +35,12 @@ def parse_labels(labels_input: str) -> List[str]:
 
 
 def collect_image_paths(folder: Path) -> List[Path]:
-    """
-    Collect all image files from a folder.
-    
-    Args:
-        folder: Path to folder containing images
-        
-    Returns:
-        List of image file paths
-    """
     extensions = {'.jpg', '.jpeg', '.png', '.bmp', '.tiff', '.tif'}
-    image_paths = []
-    
-    for ext in extensions:
-        image_paths.extend(folder.glob(f'*{ext}'))
-        image_paths.extend(folder.glob(f'*{ext.upper()}'))
-    
-    return sorted(image_paths)
+
+    return sorted(
+        p for p in folder.rglob('*')
+        if p.is_file() and p.suffix.lower() in extensions
+    )
 
 
 @click.command()
