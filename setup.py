@@ -28,8 +28,8 @@ readme_file = Path(__file__).parent / "README.md"
 long_description = readme_file.read_text(encoding="utf-8") if readme_file.exists() else ""
 
 setup(
-    name="miso-onnx",
-    version="0.1.0",
+    name="miso_onnx",
+    version="0.1.1",
     description="ONNX-based inference for MISO microfossil classification models",
     long_description=long_description,
     long_description_content_type="text/markdown",
