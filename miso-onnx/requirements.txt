@@ -1,0 +1,12 @@
+# Core dependencies with exact versions for reproducibility
+# These versions were tested and confirmed working on Python 3.11
+numpy==2.3.5
+Pillow==12.0.0
+onnxruntime>=1.12.0  # Use onnxruntime-gpu==1.23.2 if you have CUDA support (see requirements-gpu.txt)
+tqdm==4.67.1
+pydantic==2.12.5
+click==8.3.1
+
+# Note: For GPU acceleration, use requirements-gpu.txt instead:
+#   pip install -r requirements-gpu.txt
+# This will install onnxruntime-gpu instead of the CPU-only onnxruntime

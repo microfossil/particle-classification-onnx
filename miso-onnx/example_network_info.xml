@@ -1,0 +1,361 @@
+<network version="2.1">
+  <name>ResNet50</name>
+  <description>ResNet50: resnet50 model trained on data from C:\Users\martinT\Desktop\test (8168 images in 39 classes).
+Accuracy: 97.6 (P: 95.0, R: 93.4, F1 93.6)</description>
+  <type>resnet50</type>
+  <date>2025-05-21_152437</date>
+  <protobuf>model.onnx</protobuf>
+  <inputs>
+    <input>
+      <name>image</name>
+      <operation>input_1</operation>
+      <height>256</height>
+      <width>256</width>
+      <channels>3</channels>
+    </input>
+  </inputs>
+  <outputs>
+    <output>
+      <name>pred</name>
+      <operation>dense_1/Softmax:0</operation>
+      <height>39</height>
+      <width>0</width>
+      <channels>0</channels>
+    </output>
+  </outputs>
+  <source_data>C:\Users\martinT\Desktop\test</source_data>
+  <source_size>8168</source_size>
+  <labels>
+    <label>
+      <code>Actinocyclus actinochilus</code>
+      <count>24</count>
+      <precision>0.8333333333333334</precision>
+      <recall>1.0</recall>
+      <f1score>0.9090909090909091</f1score>
+      <support>5</support>
+    </label>
+    <label>
+      <code>Asteromphalus hookeri</code>
+      <count>10</count>
+      <precision>1.0</precision>
+      <recall>1.0</recall>
+      <f1score>1.0</f1score>
+      <support>2</support>
+    </label>
+    <label>
+      <code>Asteromphalus parvulus</code>
+      <count>26</count>
+      <precision>0.8333333333333334</precision>
+      <recall>1.0</recall>
+      <f1score>0.9090909090909091</f1score>
+      <support>5</support>
+    </label>
+    <label>
+      <code>Chaetoceros atlanticus</code>
+      <count>56</count>
+      <precision>0.9090909090909091</precision>
+      <recall>0.9090909090909091</recall>
+      <f1score>0.9090909090909091</f1score>
+      <support>11</support>
+    </label>
+    <label>
+      <code>Chaetoceros criophilus</code>
+      <count>15</count>
+      <precision>1.0</precision>
+      <recall>0.6666666666666666</recall>
+      <f1score>0.8</f1score>
+      <support>3</support>
+    </label>
+    <label>
+      <code>Chaetoceros dichaeta</code>
+      <count>167</count>
+      <precision>0.9705882352941176</precision>
+      <recall>1.0</recall>
+      <f1score>0.9850746268656716</f1score>
+      <support>33</support>
+    </label>
+    <label>
+      <code>Cocconeis costata fasciculata</code>
+      <count>13</count>
+      <precision>1.0</precision>
+      <recall>1.0</recall>
+      <f1score>1.0</f1score>
+      <support>2</support>
+    </label>
+    <label>
+      <code>Corethron pennatum</code>
+      <count>79</count>
+      <precision>0.8823529411764706</precision>
+      <recall>0.9375</recall>
+      <f1score>0.9090909090909091</f1score>
+      <support>16</support>
+    </label>
+    <label>
+      <code>Dactyliosolen antarcticus</code>
+      <count>50</count>
+      <precision>1.0</precision>
+      <recall>1.0</recall>
+      <f1score>1.0</f1score>
+      <support>10</support>
+    </label>
+    <label>
+      <code>Diatoms - background</code>
+      <count>158</count>
+      <precision>1.0</precision>
+      <recall>0.96875</recall>
+      <f1score>0.9841269841269841</f1score>
+      <support>32</support>
+    </label>
+    <label>
+      <code>Eucampia antarctica</code>
+      <count>205</count>
+      <precision>0.9534883720930233</precision>
+      <recall>1.0</recall>
+      <f1score>0.9761904761904763</f1score>
+      <support>41</support>
+    </label>
+    <label>
+      <code>Fragilariopsis GirdleView</code>
+      <count>42</count>
+      <precision>1.0</precision>
+      <recall>1.0</recall>
+      <f1score>1.0</f1score>
+      <support>8</support>
+    </label>
+    <label>
+      <code>Fragilariopsis curta</code>
+      <count>743</count>
+      <precision>0.9867549668874173</precision>
+      <recall>1.0</recall>
+      <f1score>0.9933333333333334</f1score>
+      <support>149</support>
+    </label>
+    <label>
+      <code>Fragilariopsis kerguelensis</code>
+      <count>935</count>
+      <precision>0.9946808510638298</precision>
+      <recall>1.0</recall>
+      <f1score>0.9973333333333333</f1score>
+      <support>187</support>
+    </label>
+    <label>
+      <code>Fragilariopsis obliquecostata</code>
+      <count>50</count>
+      <precision>0.6923076923076923</precision>
+      <recall>0.9</recall>
+      <f1score>0.7826086956521738</f1score>
+      <support>10</support>
+    </label>
+    <label>
+      <code>Fragilariopsis rhombica</code>
+      <count>664</count>
+      <precision>1.0</precision>
+      <recall>1.0</recall>
+      <f1score>1.0</f1score>
+      <support>133</support>
+    </label>
+    <label>
+      <code>Fragilariopsis ritscheri</code>
+      <count>110</count>
+      <precision>0.9444444444444444</precision>
+      <recall>0.7727272727272727</recall>
+      <f1score>0.85</f1score>
+      <support>22</support>
+    </label>
+    <label>
+      <code>Fragilariopsis separanda</code>
+      <count>23</count>
+      <precision>1.0</precision>
+      <recall>0.8</recall>
+      <f1score>0.888888888888889</f1score>
+      <support>5</support>
+    </label>
+    <label>
+      <code>Fragilariopsis sublinearis</code>
+      <count>133</count>
+      <precision>1.0</precision>
+      <recall>0.9259259259259259</recall>
+      <f1score>0.9615384615384615</f1score>
+      <support>27</support>
+    </label>
+    <label>
+      <code>Fragilariopsis vanheurckii</code>
+      <count>33</count>
+      <precision>1.0</precision>
+      <recall>1.0</recall>
+      <f1score>1.0</f1score>
+      <support>7</support>
+    </label>
+    <label>
+      <code>Odontella weisflogii</code>
+      <count>26</count>
+      <precision>1.0</precision>
+      <recall>0.8</recall>
+      <f1score>0.888888888888889</f1score>
+      <support>5</support>
+    </label>
+    <label>
+      <code>Other - Blurry</code>
+      <count>661</count>
+      <precision>1.0</precision>
+      <recall>0.9848484848484849</recall>
+      <f1score>0.9923664122137404</f1score>
+      <support>132</support>
+    </label>
+    <label>
+      <code>Other - Bubble</code>
+      <count>49</count>
+      <precision>1.0</precision>
+      <recall>1.0</recall>
+      <f1score>1.0</f1score>
+      <support>10</support>
+    </label>
+    <label>
+      <code>Other - Double</code>
+      <count>982</count>
+      <precision>0.9696969696969697</precision>
+      <recall>0.9795918367346939</recall>
+      <f1score>0.9746192893401016</f1score>
+      <support>196</support>
+    </label>
+    <label>
+      <code>Other - Particle</code>
+      <count>328</count>
+      <precision>0.9848484848484849</precision>
+      <recall>0.9848484848484849</recall>
+      <f1score>0.9848484848484849</f1score>
+      <support>66</support>
+    </label>
+    <label>
+      <code>Other - Silicoflagellate</code>
+      <count>188</count>
+      <precision>1.0</precision>
+      <recall>1.0</recall>
+      <f1score>1.0</f1score>
+      <support>38</support>
+    </label>
+    <label>
+      <code>Other - Spicule</code>
+      <count>836</count>
+      <precision>0.9764705882352941</precision>
+      <recall>0.9940119760479041</recall>
+      <f1score>0.9851632047477744</f1score>
+      <support>167</support>
+    </label>
+    <label>
+      <code>Other - broken</code>
+      <count>722</count>
+      <precision>0.9785714285714285</precision>
+      <recall>0.9513888888888888</recall>
+      <f1score>0.9647887323943661</f1score>
+      <support>144</support>
+    </label>
+    <label>
+      <code>Proboscia inermis</code>
+      <count>40</count>
+      <precision>0.8888888888888888</precision>
+      <recall>1.0</recall>
+      <f1score>0.9411764705882353</f1score>
+      <support>8</support>
+    </label>
+    <label>
+      <code>Pseudonitzschia turgiloides lineola</code>
+      <count>13</count>
+      <precision>1.0</precision>
+      <recall>0.5</recall>
+      <f1score>0.6666666666666666</f1score>
+      <support>2</support>
+    </label>
+    <label>
+      <code>Rhizosolenia antennata semispina</code>
+      <count>104</count>
+      <precision>0.9090909090909091</precision>
+      <recall>0.9523809523809523</recall>
+      <f1score>0.9302325581395349</f1score>
+      <support>21</support>
+    </label>
+    <label>
+      <code>Rhizosolenia simplex</code>
+      <count>22</count>
+      <precision>0.6</precision>
+      <recall>0.75</recall>
+      <f1score>0.6666666666666665</f1score>
+      <support>4</support>
+    </label>
+    <label>
+      <code>Shionodiscus gracilis</code>
+      <count>100</count>
+      <precision>1.0</precision>
+      <recall>1.0</recall>
+      <f1score>1.0</f1score>
+      <support>20</support>
+    </label>
+    <label>
+      <code>Thalassiosira antarctica cold</code>
+      <count>210</count>
+      <precision>0.9767441860465116</precision>
+      <recall>1.0</recall>
+      <f1score>0.988235294117647</f1score>
+      <support>42</support>
+    </label>
+    <label>
+      <code>Thalassiosira antarctica warm</code>
+      <count>31</count>
+      <precision>0.8571428571428571</precision>
+      <recall>1.0</recall>
+      <f1score>0.923076923076923</f1score>
+      <support>6</support>
+    </label>
+    <label>
+      <code>Thalassiosira lentiginosa</code>
+      <count>104</count>
+      <precision>1.0</precision>
+      <recall>1.0</recall>
+      <f1score>1.0</f1score>
+      <support>21</support>
+    </label>
+    <label>
+      <code>Thalassiosira oliverana</code>
+      <count>23</count>
+      <precision>1.0</precision>
+      <recall>1.0</recall>
+      <f1score>1.0</f1score>
+      <support>5</support>
+    </label>
+    <label>
+      <code>Thalassiosira tumida</code>
+      <count>100</count>
+      <precision>0.9090909090909091</precision>
+      <recall>1.0</recall>
+      <f1score>0.9523809523809523</f1score>
+      <support>20</support>
+    </label>
+    <label>
+      <code>others</code>
+      <count>93</count>
+      <precision>1.0</precision>
+      <recall>0.631578947368421</recall>
+      <f1score>0.7741935483870968</f1score>
+      <support>19</support>
+    </label>
+  </labels>
+  <prepro>
+    <name>rescale</name>
+    <params>
+      <param>255</param>
+      <param>0</param>
+      <param>1</param>
+    </params>
+  </prepro>
+  <accuracy>0.9761321909424725</accuracy>
+  <precision>0.9500235974522261</precision>
+  <recall>0.9335720601417591</recall>
+  <f1score>0.9356092956089753</f1score>
+  <load>
+    <training_epochs>132</training_epochs>
+    <training_time>4983.6272077560425</training_time>
+    <training_split>0.2</training_split>
+    <training_time_per_image>0.00577784518454784</training_time_per_image>
+    <inference_time_per_image>578.5462893545628</inference_time_per_image>
+  </load>
+</network>
