@@ -78,9 +78,8 @@ Options:
 
 ## An Raspberrypi Camera for Automated Microscopy
 
-```
 A .zip file containing the RaCAM software, required files and directories to run it, installation procedure, ImageJ scripts for automated image segmentation and CNN model to run a test label inference is available to download:
-```
+
 
 ## Installation
 
