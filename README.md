@@ -101,6 +101,7 @@ Install python packages:
 Download and Unzip the Racam.zip file: 
 
 -Unzip the RaCAM.zip file on your Desktop and ensure that the "RaCAM" file, and "RaCAM_files" and "RaCAM_output" folders are located on your desktop.
+
 -Navigate to the "RaCAM_output" located on your desktop, right-click on the RaCAM.py file and select "Thonny" as default application to open this type of file.
 -Right click on the "RaCAM" file and update lines 5 and 6 by replacing <user> by your Raspberry Pi username, and save it. You should now see the "RaCAM" file icon as a Raspberry Pi.
 -Double-click on it to start the RaCAM software, you will be prompt to enter your username for updating paths for running the software. You should enter the Raspberrypi username profile currently in use, and that can be found by looking at the path to the Desktop directory (e.g.: "/home/<user>/Desktop").
