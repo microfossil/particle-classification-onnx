@@ -103,9 +103,13 @@ Download and Unzip the Racam.zip file:
 -Unzip the RaCAM.zip file on your Desktop and ensure that the "RaCAM" file, and "RaCAM_files" and "RaCAM_output" folders are located on your desktop.
 
 -Navigate to the "RaCAM_output" located on your desktop, right-click on the RaCAM.py file and select "Thonny" as default application to open this type of file.
+
 -Right click on the "RaCAM" file and update lines 5 and 6 by replacing <user> by your Raspberry Pi username, and save it. You should now see the "RaCAM" file icon as a Raspberry Pi.
+
 -Double-click on it to start the RaCAM software, you will be prompt to enter your username for updating paths for running the software. You should enter the Raspberrypi username profile currently in use, and that can be found by looking at the path to the Desktop directory (e.g.: "/home/<user>/Desktop").
+
 -Once validated, the software should start successfully and you should be able to see the user interface. The RaCAM software can now be closed as other softwares and packages are required before using it.
+
 -Check if camera is detected and working properly by opening the terminal and running:
 ```
   rpicam-hello --timeout 0
@@ -116,10 +120,15 @@ Then you can use "Ctrl+C" in the terminal window, or simply the close button on 
 Install ImageJ:
 
 -Install ImageJ from "Application menu bar": "Preferences": "Add / Remove software" and look for "Image processing program with a focus on microscopy images" and "Java library for ImageJ". Select both of them then click "Ok".
+
 -Start it in "Application menu bar" under "Education".
+
 -Navigate to "/home/<user>/". Press "ctrl+h" to show hidden files and folders.
+
 -Open a file manager window, navigate to the "Edit" menu: "Preferences" and select "Don't ask option on launch of executable files" in the "General" tab.
+
 -Go into the "home/<user>/.imagej" directory.
+
 -Drop "AutoDiato_RaCAMx40.ijm" into "/macros" and "Adjustable_Watershed.class" in "/plugins".
 
 
