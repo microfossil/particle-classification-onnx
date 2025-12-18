@@ -82,10 +82,10 @@ Install packages in Miniconda3 environment:
 
 -Check if miso-onnx installation is successfull by running:
 ```
-miso-onnx classify --network-info /home/esnz/<user>/RaCAM_files/CNN_models/ResNet50_Diatoms/model_onnx/network_info.xml --images /home/<user>/Desktop/RaCAM_files/CNN_models/ResNet50_Diatoms/simple_test/unlabeled_images --output-csv /home/<user>/Desktop/RaCAM_files/CNN_models/ResNet50_Diatoms/simple_test/prediction_file/predictions.csv
+miso-onnx classify --network-info /home/esnz/<user>/RaCAM_files/CNN_models/ResNet50_EoceneRadiolaria/model_onnx/network_info.xml --images /home/<user>/Desktop/RaCAM_files/CNN_models/ResNet50_EoceneRadiolaria/simple_test/unlabeled_images --output-csv /home/<user>/Desktop/RaCAM_files/CNN_models/ResNet50_EoceneRadiolaria/simple_test/prediction_file/predictions.csv
 ```
 
--This should generate a csv file located in /RaCAM_files/CNN_models/ResNet50_Diatoms/simple_test/prediction_file
+-This should generate a csv file located in /RaCAM_files/CNN_models/ResNet50_EoceneRadiolaria/simple_test/prediction_file
 
 For more information about the use of onnx model for recognition workflow, visit: https://github.com/microfossil/particle-classification-onnx
 
