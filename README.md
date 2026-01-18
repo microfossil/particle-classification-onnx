@@ -27,9 +27,7 @@ Download and Unzip the Racam.zip file:
 
 -Unzip the RaCAM.zip file on your Desktop and ensure that the "RaCAM" file, and "RaCAM_files" and "RaCAM_output" folders are located on your desktop.
 
--Navigate to the "RaCAM_output" located on your desktop, right-click on the RaCAM.py file and select "Thonny" as default application to open this type of file.
-
--Right click on the "RaCAM" file and update lines 5 and 6 by replacing <user> by your Raspberry Pi username, and save it. You should now see the "RaCAM" file icon as a Raspberry Pi.
+-Right click on the "RaCAM" file and update lines 5 and 6 by replacing <user> with your Raspberry Pi username, and save it. You should now see the "RaCAM" file icon as a Raspberry Pi.
 
 -Double-click on it to start the RaCAM software, you will be prompt to enter your username for updating paths for running the software. You should enter the Raspberrypi username profile currently in use, and that can be found by looking at the path to the Desktop directory (e.g.: "/home/<user>/Desktop").
 
@@ -82,7 +80,7 @@ Install packages in Miniconda3 environment:
 
 -Check if miso-onnx installation is successfull by running:
 ```
-miso-onnx classify --network-info /home/esnz/<user>/RaCAM_files/CNN_models/ResNet50_EoceneRadiolaria/model_onnx/network_info.xml --images /home/<user>/Desktop/RaCAM_files/CNN_models/ResNet50_EoceneRadiolaria/simple_test/unlabeled_images --output-csv /home/<user>/Desktop/RaCAM_files/CNN_models/ResNet50_EoceneRadiolaria/simple_test/prediction_file/predictions.csv
+miso-onnx classify --network-info /home/<user>/Desktop/RaCAM_files/CNN_models/ResNet50_EoceneRadiolaria/model_onnx/network_info.xml --images /home/<user>/Desktop/RaCAM_files/CNN_models/ResNet50_EoceneRadiolaria/simple_test/unlabeled_images --output-csv /home/<user>/Desktop/RaCAM_files/CNN_models/ResNet50_EoceneRadiolaria/simple_test/prediction_file/predictions.csv
 ```
 
 -This should generate a csv file located in /RaCAM_files/CNN_models/ResNet50_EoceneRadiolaria/simple_test/prediction_file
@@ -92,7 +90,7 @@ For more information about the use of onnx model for recognition workflow, visit
 
 # STL files for Raspberrypi camera modules adaptors
 
-Camera modules adaptors to directly attach camera modules to Raspberrypi official cases through the bottom vent holes were 3D design and are available for 3D printing (preferably using resin). If you don't own a 3D printer, adaptors can be printed on demand. You can contact us at tetard.martin@gmail.com for more information.
+Camera modules adaptors to directly attach camera modules to Raspberrypi official cases through the bottom vent holes were 3D design and are available for 3D printing (preferably using resin).
 
 ![CameraModuleAdaptors](Adaptors.jpg "Camera module adaptors")
 
