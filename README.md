@@ -2,7 +2,9 @@
 
 ## An Raspberrypi Camera for Automated Microscopy
 
-A .zip file containing the RaCAM software, required files and directories to run it, installation procedure, ImageJ scripts for automated image segmentation and CNN model to run a test label inference is available to download: RaCAM.zip
+A .zip file containing the RaCAM software, required files and directories to run it, installation procedure, ImageJ scripts for automated image segmentation and CNN model to run a test label inference is available to download: RaCAM.zip.
+
+The RaCAM software, ImageJ scripts, and miso-onnx library developed in this study, as well as 3D models of camera module adaptors are openly licensed via CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/), allowing use, modification, and redistribution under the same terms, for personal purposes only as long as credit is given to the creator, and preventing any commercial use.
 
 ![RaCAM](RaCAM.jpg "RaCAM")
 
