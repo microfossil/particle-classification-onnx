@@ -92,7 +92,7 @@ For more information about the use of onnx model for recognition workflow, visit
 
 # STL files for Raspberrypi camera modules adaptors
 
-Camera modules adaptors to directly attach camera modules to Raspberrypi official cases through the bottom vent holes were 3D design and are available for 3D printing (preferably using resin).
+Camera modules adaptors to directly attach camera modules to Raspberrypi official cases through the bottom vent holes were 3D design and are available for 3D printing (preferably using resin). Four versions are available in the "STL_files.zip" file: A HQ Camera version; a CS-mount threaded version for Camera module V3 and AI camera; a C-mount threaded version for Camera module V3 and AI camera; and a C-mount-adaptor version for Camera module V3 and AI camera.
 
 ![CameraModuleAdaptors](Adaptors.jpg "Camera module adaptors")
 
