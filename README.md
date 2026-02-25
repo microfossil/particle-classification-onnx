@@ -1,6 +1,6 @@
 # RaCAM
 
-## An Raspberrypi Camera for Automated Microscopy
+## A high Resolution and Affordable Camera for Automated Microscopy
 
 A .zip file containing the RaCAM software, required files and directories to run it, installation procedure, ImageJ scripts for automated image segmentation and CNN model to run a test label inference is available to download: RaCAM.zip.
 
@@ -29,9 +29,9 @@ Download and Unzip the Racam.zip file:
 
 -Unzip the RaCAM.zip file on your Desktop and ensure that the "RaCAM" file, and "RaCAM_files" and "RaCAM_output" folders are located on your desktop.
 
--Right click on the "RaCAM" file and update lines 5 and 6 by replacing <user> with your Raspberry Pi username, and save it. You should now see the "RaCAM" file icon as a Raspberry Pi.
+-Right click on the "RaCAM" file and update lines 5 and 6 by replacing <user> with your OS username, and save it. You should now see the "RaCAM" file icon as a camera case.
 
--Double-click on it to start the RaCAM software, you will be prompt to enter your username for updating paths for running the software. You should enter the Raspberrypi username profile currently in use, and that can be found by looking at the path to the Desktop directory (e.g.: "/home/<user>/Desktop").
+-Double-click on it to start the RaCAM software, you will be prompt to enter your username for updating paths for running the software. You should enter the username profile currently in use, and that can be found by looking at the path to the Desktop directory (e.g.: "/home/<user>/Desktop").
 
 -Once validated, the software should start successfully and you should be able to see the user interface. The RaCAM software can now be closed as other softwares and packages are required before using it.
 
@@ -90,9 +90,9 @@ miso-onnx classify --network-info /home/<user>/Desktop/RaCAM_files/CNN_models/Re
 For more information about the use of onnx model for recognition workflow, visit: https://github.com/microfossil/particle-classification-onnx
 
 
-# STL files for Raspberrypi camera modules adaptors
+# STL files for board cases and camera modules adaptors
 
-Camera modules adaptors to directly attach camera modules to Raspberrypi official cases through the bottom vent holes were 3D design and are available for 3D printing (preferably using resin). Four versions are available in the "STL_files.zip" file: A HQ Camera version; a CS-mount threaded version for Camera module V3 and AI camera; a C-mount threaded version for Camera module V3 and AI camera; and a C-mount-adaptor version for Camera module V3 and AI camera.
+Camera modules adaptors to directly attach camera modules to a 3D-printable case were 3D design and are available for 3D printing (preferably using resin). Four versions are available in the "STL_files.zip" file: A HQ Camera version; a CS-mount threaded version for Camera module V3 and AI camera; a C-mount threaded version for Camera module V3 and AI camera; and a C-mount-adaptor version for Camera module V3 and AI camera. Two versions of the camera cases are also available to be 3D printed.
 
 ![CameraModuleAdaptors](Adaptors.jpg "Camera module adaptors")
 
