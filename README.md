@@ -48,18 +48,18 @@ Install ImageJ:
 
 -Start it in "Application menu bar" under "Education".
 
--Navigate to "/home/<user>/". Press "ctrl+h" to show hidden files and folders.
+-Navigate to `/home/<user>/`. Press "ctrl+h" to show hidden files and folders.
 
 -Open a file manager window, navigate to the "Edit" menu: "Preferences" and select "Don't ask option on launch of executable files" in the "General" tab.
 
--Go into the "home/<user>/.imagej" directory.
+-Go into the `home/<user>/.imagej` directory.
 
 -Drop "AutoDiato_RaCAMx40.ijm" into "/macros" and "Adjustable_Watershed.class" in "/plugins".
 
 
 Download and install Miniconda3:
 
--Run and Follow instructions during Miniconda3 installation. Answer "yes" to the licence terms, and install it in the default location (/home/<user>/miniconda3), and answer "yes" when ask to proceed to initilization:
+-Run and Follow instructions during Miniconda3 installation. Answer "yes" to the licence terms, and install it in the default location (`/home/<user>/miniconda3`), and answer "yes" when ask to proceed to initilization:
 ```
   wget repo.anaconda.com
   wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh
