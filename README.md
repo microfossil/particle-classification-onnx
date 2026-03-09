@@ -92,7 +92,7 @@ For more information about the use of onnx model for recognition workflow, visit
 
 # STL files for board cases and camera modules adaptors
 
-Camera modules adaptors to directly attach camera modules to a 3D-printable case were 3D design and are available for 3D printing (preferably using resin). Four versions are available in the "STL_files.zip" file: A HQ Camera version; a CS-mount threaded version for Camera module V3 and AI camera; a C-mount threaded version for Camera module V3 and AI camera; and a C-mount-adaptor version for Camera module V3 and AI camera. Two versions of the camera cases are also available to be 3D printed.
+Camera modules adaptors to directly attach camera modules to a 3D-printable case were 3D design and are available for 3D printing (preferably using resin). Different versions are available in the "STL_files.zip" file: A HQ Camera version; a CS-mount threaded version for Camera module V3 and AI camera; a C-mount threaded version for Camera module V3 and AI camera; and a C-mount-adaptor version for Camera module V3 and AI camera. Two versions of the camera cases are also available to be 3D printed.
 
 ![CameraModuleAdaptors](Adaptors.jpg "Camera module adaptors")
 
