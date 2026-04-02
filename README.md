@@ -2,9 +2,13 @@
 
 ## A Recognition-assisted Camera for Automated Microscopy
 
-A .zip file containing the RaCAM software, required files and directories to run it, installation procedure, ImageJ scripts for automated image segmentation and CNN model to run a test label inference is available to download: RaCAM.zip.
+A .zip file containing the RaCAM software, required files and directories to run it, installation procedure, ImageJ scripts for automated image segmentation and CNN model to run a test label inference is available to download: RaCAM_software.zip.
 
-The RaCAM software, ImageJ scripts, and miso-onnx library developed in this study, as well as 3D models of camera module adaptors are openly licensed via CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/), allowing use, modification, and redistribution under the same terms, for personal purposes only as long as credit is given to the creator, and preventing any commercial use. These resources are open-source and freely available to the public and scientific community. Any private companies willing to use these assets can contact us at martin.tetard@earthsciences.nz to discuss terms and conditions.
+The RaCAM software, ImageJ scripts, and miso-onnx library developed in this study, 
+
+<a href="https://example.com">RaCAM_3D_files.zip</a> © 2026 by <a href="https://www.gns.cri.nz/about-us/staff-search/martin-tetard/">Martin Tetard</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+
+The 3D models of camera module adaptors and camera case (are openly licensed via CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/), allowing use, modification, and redistribution under the same terms, for personal purposes only as long as credit is given to the creator, and preventing any commercial use. These resources are open-source and freely available to the public and scientific community. Any private companies willing to use these assets can contact us at martin.tetard@earthsciences.nz to discuss terms and conditions.
 
 ![RaCAM](RaCAM.jpg "RaCAM")
 
