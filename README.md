@@ -4,7 +4,7 @@
 
 A .zip file containing the RaCAM software, required files and directories to run it, installation procedure, ImageJ scripts for automated image segmentation and CNN model to run a test label inference is available to download: RaCAM_software.zip.
 
-The RaCAM software, ImageJ scripts, and miso-onnx library developed in this study are protected under GPL3
+The RaCAM\_software.zip (containing software, ImageJ scripts, and miso-onnx library developed in this study), is protected under GNU GPLv.3 license (Copyright © 2026 Martin Tetard). This license allows users to freely run, share, and modify software while requiring that any modified versions be distributed under the same license terms, including the disclosure of source code.
 
 Another .zip file containing 3D models of camera sensor adaptors and camera cases is also available to download to print your own: RaCAM_3D_files.zip.
 
