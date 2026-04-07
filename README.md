@@ -46,7 +46,7 @@ Download and unzip the "RaCAM_software.zip" file:
 
 -Unzip the "RaCAM_software.zip" file on your Desktop and ensure that the "RaCAM" file, and "RaCAM_files" and "RaCAM_output" folders are located on your desktop.
 
--Open the "RaCAM" file with a text editor and update lines 5 and 6 by replacing <user> with your OS username, and save it. You should now see the "RaCAM" file icon as a camera case after a restart.
+-Open the "RaCAM" file with a text editor and update lines 3 (Exec=) and 4 (Icon=) by replacing <user> with your OS username, and save it. You should now see the "RaCAM" file icon as a camera case after a restart.
 
 -Double-click on it to start the RaCAM software, you will be prompt to enter your username for updating paths for running the software. You should enter the username profile currently in use, and that can be found by looking at the path to the Desktop directory (e.g.: `/home/<user>/Desktop`).
 
