@@ -14,6 +14,8 @@ This licence allows use, modification, and redistribution under the same terms (
 
 ![RaCAM](RaCAM.jpg "RaCAM")
 
+![RaCAM2](RaCAM2.jpg "RaCAM2")
+
 ## Installation
 
 Softwares / packages be installed:
