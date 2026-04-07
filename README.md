@@ -9,7 +9,7 @@ RaCAM is a new, affordable, AI-assisted, Raspberry Pi-powered camera, with the f
 
 ## Downloadable files
 
-"RaCAM_software.zip": file containing the RaCAM software, required files and directories to run it, installation procedure, ImageJ scripts for automated image segmentation and CNN model to run a test label inference. RaCAM software is a free software (developed using the Python programming language), used to perform image acquisition (using rpicam-apps developed by ((C) Raspberry Pi Ltd), image processing and segmentation (using the ImageJ software) and image recognition using CNNs.
+"RaCAM_software.zip": file containing the RaCAM software, required files and directories to run it, installation procedure, ImageJ scripts for automated image segmentation and CNN model to run a test label inference. RaCAM software is a free software (developed using the Python programming language), used to perform image acquisition (using rpicam-apps developed by (© Raspberry Pi Ltd), image processing and segmentation (using the ImageJ software) and image recognition using CNNs.
 
 The RaCAM\_software.zip (containing software, ImageJ scripts, and miso-onnx library developed in this study), is protected under GNU GPLv.3 license (Copyright © 2026 Martin Tetard). This license allows users to freely run, share, and modify software while requiring that any modified versions be distributed under the same license terms, including the disclosure of source code.
 
@@ -27,7 +27,7 @@ The RaCAM\_software.zip (containing software, ImageJ scripts, and miso-onnx libr
 
 ## Installation
 
-Softwares / packages be installed:
+Softwares / packages be installed on your Raspberry Pi 5 board:
 
 Install python packages:
 
@@ -42,11 +42,11 @@ Install python packages:
   sudo apt install python3-pil.imagetk
 ```
 
-Download and Unzip the Racam.zip file: 
+Download and unzip the "RaCAM_software.zip" file: 
 
--Unzip the RaCAM.zip file on your Desktop and ensure that the "RaCAM" file, and "RaCAM_files" and "RaCAM_output" folders are located on your desktop.
+-Unzip the "RaCAM_software.zip" file on your Desktop and ensure that the "RaCAM" file, and "RaCAM_files" and "RaCAM_output" folders are located on your desktop.
 
--Right click on the "RaCAM" file and update lines 5 and 6 by replacing <user> with your OS username, and save it. You should now see the "RaCAM" file icon as a camera case.
+-Open the "RaCAM" file with a text editor and update lines 5 and 6 by replacing <user> with your OS username, and save it. You should now see the "RaCAM" file icon as a camera case after a restart.
 
 -Double-click on it to start the RaCAM software, you will be prompt to enter your username for updating paths for running the software. You should enter the username profile currently in use, and that can be found by looking at the path to the Desktop directory (e.g.: `/home/<user>/Desktop`).
 
@@ -69,9 +69,9 @@ Install ImageJ:
 
 -Open a file manager window, navigate to the "Edit" menu: "Preferences" and select "Don't ask option on launch of executable files" in the "General" tab.
 
--Go into the `home/<user>/.imagej` directory.
+-Go into the `home/<user>/.imagej/` directory.
 
--Drop "AutoDiato_RaCAMx40.ijm" into "/macros" and "Adjustable_Watershed.class" in "/plugins".
+-Copy the "AutoDiato_RaCAMx40.ijm" and "Adjustable_Watershed.class" files (located in `/home/<user>/Desktop/RaCAM_files/imagej_plugins/`) into the `home/<user>/.imagej/macros` and `home/<user>/.imagej/plugins/`, respectively.
 
 
 Download and install Miniconda3:
@@ -102,7 +102,7 @@ Install packages in Miniconda3 environment:
 miso-onnx classify --network-info /home/<user>/Desktop/RaCAM_files/CNN_models/ResNet50_EoceneRadiolaria/model_onnx/network_info.xml --images /home/<user>/Desktop/RaCAM_files/CNN_models/ResNet50_EoceneRadiolaria/simple_test/unlabeled_images --output-csv /home/<user>/Desktop/RaCAM_files/CNN_models/ResNet50_EoceneRadiolaria/simple_test/prediction_file/predictions.csv
 ```
 
--This should generate a csv file located in /RaCAM_files/CNN_models/ResNet50_EoceneRadiolaria/simple_test/prediction_file
+-This should generate a csv file located in `/RaCAM_files/CNN_models/ResNet50_EoceneRadiolaria/simple_test/prediction_file/`
 
 For more information about the use of onnx model for recognition workflow, visit: https://github.com/microfossil/particle-classification-onnx
 
