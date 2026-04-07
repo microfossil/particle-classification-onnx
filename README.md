@@ -6,8 +6,6 @@ RaCAM is a new, affordable, AI-assisted, Raspberry Pi-powered camera, with the f
 
 ![RaCAM](RaCAM.jpg "RaCAM")
 
-![RaCAM2](RaCAM2.jpg "RaCAM2")
-
 
 ## Downloadable files
 
