@@ -1,23 +1,30 @@
 # RaCAM: A Recognition-assisted Camera for Automated Microscopy
 
+RaCAM is a new, affordable, AI-assisted, Raspberry Pi-powered camera, with the first, built-in, and fully automated microscopy workflow (including automated image acquisition, processing and recognition) that can fit any microscope equipped with a C-mount (or CS-mount) camera thread. This camera is equipped with an Raspberry Pi 5 and a high-resolution camera sensor (12.3 mp). Using a new open-source software (RaCAM user interface), written using the Python language, and freely downloadable too, the camera is capable of performing automated acquisition of field of view images, segmenting each visible object of interest, and identifying them using trained CNN onnx models in a few seconds as part of a whole automated workflow.
+
+![RaCAM3](RaCAM3.jpg "RaCAM3")
+
+![RaCAM](RaCAM.jpg "RaCAM")
+
+![RaCAM2](RaCAM2.jpg "RaCAM2")
+
+
 ## Downloadable files
 
-RaCAM_software.zip: a .zip file containing the RaCAM software, required files and directories to run it, installation procedure, ImageJ scripts for automated image segmentation and CNN model to run a test label inference.
+"RaCAM_software.zip": file containing the RaCAM software, required files and directories to run it, installation procedure, ImageJ scripts for automated image segmentation and CNN model to run a test label inference. RaCAM software is a free software (developed using the Python programming language), used to perform image acquisition (using rpicam-apps developed by ((C) Raspberry Pi Ltd), image processing and segmentation (using the ImageJ software) and image recognition using CNNs.
 
 The RaCAM\_software.zip (containing software, ImageJ scripts, and miso-onnx library developed in this study), is protected under GNU GPLv.3 license (Copyright © 2026 Martin Tetard). This license allows users to freely run, share, and modify software while requiring that any modified versions be distributed under the same license terms, including the disclosure of source code.
 
 <img src="https://www.gnu.org/graphics/gplv3-or-later.png" width="120">
 
 
-RaCAM_3D_files.zip: a .zip file containing 3D models of camera sensor adaptors and camera cases is also available to download to print your own.
+"RaCAM_3D_files.zip": file containing 3D models of camera sensor adaptors and camera cases is also available to download to print your own. These 3D designs allow users to 3D-print (preferably using resin), cases for the Raspberry Pi 5 Board, and adaptors to attach camera modules to the board case, and screw it on the C/CS-mount of a microscope. Different adaptor versions are available in the "RaCAM_3D_files.zip" file: A HQ Camera version; a CS-mount threaded version for Camera module V3 and AI camera; a C-mount threaded version for Camera module V3 and AI camera; and a C-mount-adaptor version for Camera module V3 and AI camera. Two versions of the camera cases are also available to be 3D printed.
 
 <a href="https://github.com/microfossil/particle-classification-onnx/blob/main/RaCAM_3D_files.zip">RaCAM_3D_files.zip</a> © 2026 by <a href="https://www.gns.cri.nz/about-us/staff-search/martin-tetard/">Martin Tetard</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>. This licence allows use, modification, and redistribution under the same terms for personal purposes only as long as credit is given to the creator, and preventing any commercial use. These resources are open-source and freely available to the public and scientific community. Any private companies willing to use these assets can contact us at martin.tetard@earthsciences.nz to discuss terms and conditions.
 
 <img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.png" width="120">
 
-![RaCAM](RaCAM.jpg "RaCAM")
-
-![RaCAM2](RaCAM2.jpg "RaCAM2")
+![RaCAM4](RaCAM4.jpg "RaCAM4")
 
 
 ## Installation
@@ -100,13 +107,6 @@ miso-onnx classify --network-info /home/<user>/Desktop/RaCAM_files/CNN_models/Re
 -This should generate a csv file located in /RaCAM_files/CNN_models/ResNet50_EoceneRadiolaria/simple_test/prediction_file
 
 For more information about the use of onnx model for recognition workflow, visit: https://github.com/microfossil/particle-classification-onnx
-
-
-# STL files for board cases and camera modules adaptors
-
-Camera modules adaptors to directly attach camera modules to a 3D-printable case were 3D design and are available for 3D printing (preferably using resin). Different versions are available in the "STL_files.zip" file: A HQ Camera version; a CS-mount threaded version for Camera module V3 and AI camera; a C-mount threaded version for Camera module V3 and AI camera; and a C-mount-adaptor version for Camera module V3 and AI camera. Two versions of the camera cases are also available to be 3D printed.
-
-![CameraModuleAdaptors](Adaptors.jpg "Camera module adaptors")
 
 
 # miso-onnx
