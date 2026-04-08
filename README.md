@@ -71,7 +71,7 @@ Install ImageJ:
 
 -Go into the `home/<user>/.imagej/` directory.
 
--Copy the "AutoDiato_RaCAMx40.ijm" and "Adjustable_Watershed.class" files (located in `/home/<user>/Desktop/RaCAM_files/imagej_plugins/`) into the `home/<user>/.imagej/macros` and `home/<user>/.imagej/plugins/`, respectively.
+-Copy the "AutoDiato_RaCAMx40.ijm" and "Adjustable_Watershed.class" files (located in `/home/<user>/Desktop/RaCAM_files/imagej_plugins/`) into the `home/<user>/.imagej/macros/` and `home/<user>/.imagej/plugins/`, respectively.
 
 
 Download and install Miniconda3:
