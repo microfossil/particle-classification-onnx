@@ -2,9 +2,9 @@
 
 RaCAM is a new, affordable, AI-assisted, Raspberry Pi-powered camera, with the first, built-in, and fully automated microscopy workflow (including automated image acquisition, processing and recognition) that can fit any microscope equipped with a C-mount (or CS-mount) camera thread. This camera is equipped with an Raspberry Pi 5 and a high-resolution camera sensor (12.3 mp). Using a new open-source software (RaCAM user interface), written using the Python language, and freely downloadable too, the camera is capable of performing automated acquisition of field of view images, segmenting each visible object of interest, and identifying them using trained CNN onnx models in a few seconds as part of a whole automated workflow.
 
-![RaCAM3](RaCAM3.jpg "RaCAM3")
+![RaCAM3](Pictures/RaCAM2.jpg "RaCAM2")
 
-![RaCAM](RaCAM.jpg "RaCAM")
+![RaCAM](Pictures/RaCAM.jpg "RaCAM")
 
 
 ## Downloadable files
@@ -24,7 +24,7 @@ The <a href="https://github.com/microfossil/particle-classification-onnx/blob/ma
 
 <img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.png" width="120">
 
-![RaCAM4](RaCAM4.jpg "RaCAM4")
+![RaCAM4](Pictures/RaCAM3.jpg "RaCAM3")
 
 
 ## Installation
