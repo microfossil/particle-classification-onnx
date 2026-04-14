@@ -71,9 +71,9 @@ Install ImageJ:
 
 -Open a file manager window, navigate to the "Edit" menu: "Preferences" and select "Don't ask option on launch of executable files" in the "General" tab.
 
--Go into the `home/<user>/.imagej/` directory.
+-Go into the `home/<user>/.imagej` directory.
 
--Copy the "AutoDiato_RaCAMx40.ijm" and "Adjustable_Watershed.class" files (located in `/home/<user>/Desktop/RaCAM_files/imagej_plugins/`) into the `home/<user>/.imagej/macros/` and `home/<user>/.imagej/plugins/`, respectively.
+-Copy the "AutoDiato_RaCAMx40.ijm" and "Adjustable_Watershed.class" files (located in `/home/<user>/Desktop/RaCAM_files/imagej_plugins`) into the `home/<user>/.imagej/macros` and `home/<user>/.imagej/plugins`, respectively.
 
 
 Download and install Miniconda3:
@@ -104,7 +104,7 @@ Install packages in Miniconda3 environment:
 miso-onnx classify --network-info /home/<user>/Desktop/RaCAM_files/CNN_models/ResNet50_EoceneRadiolaria/model_onnx/network_info.xml --images /home/<user>/Desktop/RaCAM_files/CNN_models/ResNet50_EoceneRadiolaria/simple_test/unlabeled_images --output-csv /home/<user>/Desktop/RaCAM_files/CNN_models/ResNet50_EoceneRadiolaria/simple_test/prediction_file/predictions.csv
 ```
 
--This should generate a csv file located in `/RaCAM_files/CNN_models/ResNet50_EoceneRadiolaria/simple_test/prediction_file/`
+-This should generate a csv file located in `/RaCAM_files/CNN_models/ResNet50_EoceneRadiolaria/simple_test/prediction_file`
 
 For more information about the use of onnx model for recognition workflow, visit: https://github.com/microfossil/particle-classification-onnx
 
