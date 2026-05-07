@@ -2,6 +2,8 @@
 
 RaCAM is a new, affordable, AI-assisted, Raspberry Pi-powered camera, with the first, built-in, and fully automated microscopy workflow (including automated image acquisition, processing and recognition) that can fit any microscope equipped with a C-mount (or CS-mount) camera thread. This camera is equipped with an Raspberry Pi 5 and a high-resolution camera sensor (12.3 mp). Using a new open-source software (RaCAM user interface), written using the Python language, and freely downloadable too, the camera is capable of performing automated acquisition of field of view images, segmenting each visible object of interest, and identifying them using trained CNN onnx models in a few seconds as part of a whole automated workflow.
 
+The "RaCAM: A Recognition-assisted Camera for Automated Microscopy" manuscript is not <a href="https://egusphere.copernicus.org/preprints/2026/egusphere-2026-2075/">available as a preprint in Biogeosciences</a>!
+
 ![RaCAM3](Pictures/RaCAM2.jpg "RaCAM2")
 
 ![RaCAM](Pictures/RaCAM.jpg "RaCAM")
@@ -9,7 +11,7 @@ RaCAM is a new, affordable, AI-assisted, Raspberry Pi-powered camera, with the f
 
 ## Downloadable files
 
-The <a href="https://github.com/microfossil/particle-classification-onnx/blob/main/RaCAM_software.zip">RaCAM_software.zip</a> and <a href="https://github.com/microfossil/particle-classification-onnx/blob/main/RaCAM_3D_files.zip">RaCAM_3D_files.zip</a> will be uploaded here after publication of our manuscript.
+The <a href="https://github.com/microfossil/particle-classification-onnx/blob/main/RaCAM_software.zip">RaCAM_software.zip</a> and <a href="https://github.com/microfossil/particle-classification-onnx/blob/main/RaCAM_3D_files.zip">RaCAM_3D_files.zip</a> are now available to download.
 
 <a href="https://github.com/microfossil/particle-classification-onnx/blob/main/RaCAM_software.zip">RaCAM_software.zip</a>: file containing the RaCAM software, required files and directories to run it, installation procedure, ImageJ scripts for automated image segmentation and CNN model to run a test label inference. RaCAM software is a free software (developed using the Python programming language), used to perform image acquisition (using rpicam-apps developed by (© Raspberry Pi Ltd), image processing and segmentation (using the ImageJ software) and image recognition using CNNs.
 
