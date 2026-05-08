@@ -111,9 +111,12 @@ miso-onnx classify --network-info /home/<user>/Desktop/RaCAM_files/CNN_models/Re
 For more information about the use of onnx model for recognition workflow, visit: https://github.com/microfossil/particle-classification-onnx
 
 
+
+
 # miso-onnx
 
 Inference using ONNX for image classification
+
 
 ## Installation
 
@@ -122,6 +125,7 @@ conda create -n miso-onnx python=3.11
 conda activate miso-onnx
 
 pip install git+https://github.com/microfossil/particle-classification-onnx
+
 
 ## Command line interface (CLI)
 
