@@ -1,6 +1,6 @@
-# RaCAM: A Recognition-assisted Camera for Automated Microscopy
+# NEW: RaCAM: A Recognition-assisted Camera for Automated Microscopy
 
-RaCAM is a new, affordable, AI-assisted, Raspberry Pi-powered camera, with the first, built-in, and fully automated microscopy workflow (including automated image acquisition, processing and recognition) that can fit any microscope equipped with a C-mount (or CS-mount) camera thread. This camera is equipped with an Raspberry Pi 5 and a high-resolution camera sensor (12.3 mp). Using a new open-source software (RaCAM user interface), written using the Python language, and freely downloadable too, the camera is capable of performing automated acquisition of field of view images, segmenting each visible object of interest, and identifying them using trained CNN onnx models in a few seconds as part of a whole automated workflow.
+RaCAM is a new, open-source, affordable, AI-assisted, Raspberry Pi-powered camera, with the first, built-in, and fully automated microscopy workflow (including automated image acquisition, processing and recognition) that can fit any microscope equipped with a C-mount (or CS-mount) camera thread. This camera is equipped with an Raspberry Pi 5 and a high-resolution camera sensor (12.3 mp). Using a new open-source software (RaCAM user interface), written using the Python language, and freely downloadable too, the camera is capable of performing automated acquisition of field of view images, segmenting each visible object of interest, and identifying them using trained CNN onnx models in a few seconds as part of a whole automated workflow.
 
 The "RaCAM: A Recognition-assisted Camera for Automated Microscopy" manuscript is now <a href="https://egusphere.copernicus.org/preprints/2026/egusphere-2026-2075/">available as a preprint in Biogeosciences</a>!
 
@@ -9,7 +9,7 @@ The "RaCAM: A Recognition-assisted Camera for Automated Microscopy" manuscript i
 ![RaCAM](Pictures/RaCAM.jpg "RaCAM")
 
 
-## Downloadable files
+## Getting started: Downloadable files and hardware
 
 The <a href="https://github.com/microfossil/particle-classification-onnx/blob/main/RaCAM_software.zip">RaCAM_software.zip</a> and <a href="https://github.com/microfossil/particle-classification-onnx/blob/main/RaCAM_3D_files.zip">RaCAM_3D_files.zip</a> are now available to download.
 
@@ -29,7 +29,7 @@ The <a href="https://github.com/microfossil/particle-classification-onnx/blob/ma
 ![RaCAM4](Pictures/RaCAM3.jpg "RaCAM3")
 
 
-## Installation
+## Getting started: Installation
 
 Softwares / packages be installed on your Raspberry Pi 5 board:
 
