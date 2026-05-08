@@ -4,9 +4,11 @@ RaCAM is a new, open-source, affordable, AI-assisted, Raspberry Pi-powered camer
 
 The "RaCAM: A Recognition-assisted Camera for Automated Microscopy" manuscript is now <a href="https://egusphere.copernicus.org/preprints/2026/egusphere-2026-2075/">available as a preprint in Biogeosciences</a>!
 
-![RaCAM3](Pictures/RaCAM2.jpg "RaCAM2")
+![RaCAM2](Pictures/RaCAM2.jpg "RaCAM2")
 
 ![RaCAM](Pictures/RaCAM.jpg "RaCAM")
+
+![RaCAM4](Pictures/RaCAM4.jpg "RaCAM4")
 
 
 ## Getting started: Downloadable files and hardware
@@ -26,7 +28,7 @@ The <a href="https://github.com/microfossil/particle-classification-onnx/blob/ma
 
 <img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.png" width="120">
 
-![RaCAM4](Pictures/RaCAM3.jpg "RaCAM3")
+![RaCAM3](Pictures/RaCAM3.jpg "RaCAM3")
 
 
 ## Getting started: Installation
@@ -110,7 +112,7 @@ miso-onnx classify --network-info /home/<user>/Desktop/RaCAM_files/CNN_models/Re
 
 For more information about the use of onnx model for recognition workflow, visit: https://github.com/microfossil/particle-classification-onnx
 
-
+![RaCAM5](Pictures/RaCAM5.jpg "RaCAM5")
 
 
 # miso-onnx
