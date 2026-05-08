@@ -112,7 +112,7 @@ miso-onnx classify --network-info /home/<user>/Desktop/RaCAM_files/CNN_models/Re
 
 For more information about the use of onnx model for recognition workflow, visit: https://github.com/microfossil/particle-classification-onnx
 
-![RaCAM5](Pictures/RaCAM5.jpg "RaCAM5")
+![RaCAM5](Pictures/RaCAM5.png "RaCAM5")
 
 
 # miso-onnx
