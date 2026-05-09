@@ -8,7 +8,7 @@ The "RaCAM: A Recognition-assisted Camera for Automated Microscopy" manuscript i
 
 ![RaCAM](Pictures/RaCAM.jpg "RaCAM")
 
-![RaCAM4](Pictures/RaCAM4.jpg "RaCAM4")
+![RaCAM1](Pictures/RaCAM1.jpg "RaCAM1")
 
 
 ## Getting started: Downloadable files and hardware
