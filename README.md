@@ -84,7 +84,7 @@ Install ImageJ:
 
 Download and install Miniconda3:
 
--Run and Follow instructions during Miniconda3 installation. Answer "yes" to the licence terms, and install it in the default location (`/home/<user>/miniconda3`), and answer "yes" when ask to proceed to initilization:
+-Run and Follow instructions during Miniconda3 installation. Answer "yes" to the licence terms, and install it in the default location (`/home/<user>/miniconda3`), and answer "yes" when ask to proceed to initilization. After installing Miniconda 3, it is necessary to close the window to initialise it:
 ```
   wget repo.anaconda.com
   wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh
