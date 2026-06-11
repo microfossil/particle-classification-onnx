@@ -2,7 +2,7 @@
 
 ![RaCAM7](Pictures/RaCAM7.png "RaCAM7")
 
-RaCAM is a new, open-source, affordable, AI-assisted, Raspberry Pi-powered camera, with the first, built-in, and fully automated microscopy workflow (including automated image acquisition, processing and recognition) that can fit any microscope equipped with a C-mount (or CS-mount) camera thread. This camera is equipped with an Raspberry Pi 5 and a high-resolution camera sensor (12.3 mp). Using a new open-source software (RaCAM user interface), written using the Python language, and freely downloadable too, the camera is capable of performing automated acquisition of field of view images, segmenting each visible object of interest, and identifying them using trained CNN onnx models in a few seconds as part of a whole automated workflow.
+RaCAM is a new, open-source, affordable, AI-assisted, Raspberry Pi-powered camera, with the two first, built-in, and fully automated microscopy workflows that fits on any microscope equipped with a C-mount (or CS-mount) camera thread. This camera is equipped with an Raspberry Pi 5 and a high-resolution camera sensor (12.3 mp). It is capable of performing automated microscopy, including microfossils / microscopic objects recognition through two different workflows that might be more efficient and adapted to specific microscopic objects. These workflows rely on (1) image segmentation (RaCAM_IS software, including image acquisition, and automated processing and recognition), and (2) object detection (RaCAM_OD software including image acquisition and automated still image / live stream object detection using YOLO models), respectively.
 
 The "RaCAM: A Recognition-assisted Camera for Automated Microscopy" manuscript is now <a href="https://egusphere.copernicus.org/preprints/2026/egusphere-2026-2075/">available as a preprint in Biogeosciences</a>!
 
@@ -10,21 +10,23 @@ The "RaCAM: A Recognition-assisted Camera for Automated Microscopy" manuscript i
 
 ![RaCAM](Pictures/RaCAM.jpg "RaCAM")
 
-![RaCAM1](Pictures/RaCAM1.jpg "RaCAM1")
+![RaCAM14](Pictures/RaCAM14.jpg "RaCAM14")
 
 
 ## Getting started: Downloadable files and hardware
 
-The <a href="https://github.com/microfossil/particle-classification-onnx/blob/main/RaCAM_software.zip">RaCAM_software.zip</a> and <a href="https://github.com/microfossil/particle-classification-onnx/blob/main/RaCAM_3D_files.zip">RaCAM_3D_files.zip</a> are now available to download.
+The <a href="https://github.com/microfossil/particle-classification-onnx/blob/main/RaCAM_IS_software.zip">RaCAM_IS_software.zip</a>, <a href="https://github.com/microfossil/particle-classification-onnx/blob/main/RaCAM_OD_software.zip">RaCAM_OD_software.zip</a> and <a href="https://github.com/microfossil/particle-classification-onnx/blob/main/RaCAM_3D_files.zip">RaCAM_3D_files.zip</a> are now available to download.
 
-<a href="https://github.com/microfossil/particle-classification-onnx/blob/main/RaCAM_software.zip">RaCAM_software.zip</a>: file containing the RaCAM software, required files and directories to run it, installation procedure, ImageJ scripts for automated image segmentation and CNN model to run a test label inference. RaCAM software is a free software (developed using the Python programming language), used to perform image acquisition (using rpicam-apps developed by (© Raspberry Pi Ltd), image processing and segmentation (using the ImageJ software) and image recognition using CNNs.
+<a href="https://github.com/microfossil/particle-classification-onnx/blob/main/RaCAM_IS_software.zip">RaCAM_IS_software.zip</a>: file containing the RaCAM_IS software, required files and directories to run it, installation procedure, ImageJ scripts for automated image segmentation. <a href="https://github.com/microfossil/particle-classification-onnx/blob/main/ResNet50_EoceneRadiolaria.zip">ResNet50_EoceneRadiolaria.zip</a> contains an example CNN model to run a test label inference on provided radiolarian images. RaCAM_IS software is a free software (developed using the Python programming language), used to perform image acquisition (using rpicam-apps developed by (© Raspberry Pi Ltd), image processing and segmentation (using the ImageJ software) and image recognition using CNNs.
 
-The <a href="https://github.com/microfossil/particle-classification-onnx/blob/main/RaCAM_software.zip">RaCAM_software.zip</a> (containing software, ImageJ scripts, and miso-onnx library developed in this study), is protected under <a href="https://www.gnu.org/licenses/gpl-3.0.html">GNU GPLv.3 license</a> (Copyright © 2026 <a href="https://www.gns.cri.nz/about-us/staff-search/martin-tetard/">Martin Tetard</a>). This license allows users to freely run, share, and modify software while requiring that any modified versions be distributed under the same license terms, including the disclosure of source code.
+<a href="https://github.com/microfossil/particle-classification-onnx/blob/main/RaCAM_OD_software.zip">RaCAM_OD_software.zip</a>: file containing the RaCAM_OD software, required files and directories to run it, installation procedure, an example YOLO model to run an inference on a provided diatom field of view image. RaCAM_OD software is a free software (developed using the Python programming language), used to perform image acquisition (using rpicam-apps developed by (© Raspberry Pi Ltd), and object detection on still images and live streams using YOLO models.
+
+The <a href="https://github.com/microfossil/particle-classification-onnx/blob/main/RaCAM_IS_software.zip">RaCAM_IS_software.zip</a> (containing the RaCAM_IS software, ImageJ scripts, and miso-onnx library to run image segmentation), and the <a href="https://github.com/microfossil/particle-classification-onnx/blob/main/RaCAM_OD_software.zip">RaCAM_OD_software.zip</a> (containing the RaCAM_OD software and .onnx model example to run still image and live stream object detection) are protected under <a href="https://www.gnu.org/licenses/gpl-3.0.html">GNU GPLv.3 license</a> (Copyright © 2026 <a href="https://www.gns.cri.nz/about-us/staff-search/martin-tetard/">Martin Tetard</a>). This license allows users to freely run, share, and modify software while requiring that any modified versions be distributed under the same license terms, including the disclosure of source code.
 
 <img src="https://www.gnu.org/graphics/gplv3-or-later.png" width="120">
 
 
-<a href="https://github.com/microfossil/particle-classification-onnx/blob/main/RaCAM_3D_files.zip">RaCAM_3D_files.zip</a>: file containing 3D models of camera sensor adaptors and camera cases is also available to download to print your own. These 3D designs allow users to 3D-print (preferably using resin), cases for the Raspberry Pi 5 Board, and adaptors to attach camera modules to the board case, and screw it on the C/CS-mount of a microscope. Different adaptor versions are available in the "RaCAM_3D_files.zip" file: A HQ Camera version; a CS-mount threaded version for Camera module V2 and AI camera; a C-mount threaded version for Camera module V2 and AI camera; and a C-mount-adaptor version for Camera module V3 and AI camera. Two versions of the camera cases are also available to be 3D printed.
+<a href="https://github.com/microfossil/particle-classification-onnx/blob/main/RaCAM_3D_files.zip">RaCAM_3D_files.zip</a>: file containing 3D models of camera sensor adaptors and camera cases is also available to download to print your own. These 3D designs allow users to 3D-print (preferably using resin), cases for the Raspberry Pi 5 Board, and adaptors to attach camera modules to the board case, and screw then on the C/CS-mount of a microscope. Different adaptor versions are available in the "RaCAM_3D_files.zip" file: A HQ Camera version; a CS-mount threaded version for Camera module V2 and AI camera; a C-mount threaded version for Camera module V2 and AI camera; and a C-mount-adaptor version for Camera module V2 and AI camera. Two versions of the camera cases are also available to be 3D printed.
 
 <a href="https://github.com/microfossil/particle-classification-onnx/blob/main/RaCAM_3D_files.zip">RaCAM_3D_files.zip</a> © 2026 by <a href="https://www.gns.cri.nz/about-us/staff-search/martin-tetard/">Martin Tetard</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>. This licence allows use, modification, and redistribution under the same terms for personal purposes only as long as credit is given to the creator, and preventing any commercial use. These resources are open-source and freely available to the public and scientific community. Any private companies willing to use these assets can contact us at martin.tetard@earthsciences.nz to discuss terms and conditions.
 
@@ -33,14 +35,15 @@ The <a href="https://github.com/microfossil/particle-classification-onnx/blob/ma
 ![RaCAM3](Pictures/RaCAM3.jpg "RaCAM3")
 
 
-## Getting started: Installation
+## Getting started: RaCAM_IS Installation
 
-Softwares / packages be installed on your Raspberry Pi 5 board:
+![RaCAM11](Pictures/RaCAM11.jpg "RaCAM11")
+
+Softwares / packages be installed on the Raspberry Pi 5 board for the RaCAM_IS software to work:
 
 Install python packages:
 
--Open terminal
--Run:
+-Open a new terminal window and run:
 ```
   sudo apt update
   sudo apt upgrade
@@ -50,17 +53,21 @@ Install python packages:
   sudo apt install python3-pil.imagetk
 ```
 
-Download and unzip the "RaCAM_software.zip" file: 
+Download and unzip the "Racam_IS_software.zip" and "ResNet50_EoceneRadiolaria.zip" files: 
 
--Unzip the "RaCAM_software.zip" file on your Desktop and ensure that the "RaCAM" file, and "RaCAM_files" and "RaCAM_output" folders are located on your desktop.
+-Unzip the "Racam_IS_software.zip" file on your Desktop and ensure that the "RaCAM_IS" file, and "/RaCAM_IS_files/" and "/RaCAM_IS_output/" folders are located on your Desktop.
 
--Open the "RaCAM" file with a text editor and update lines 3 (Exec=) and 4 (Icon=) by replacing `<user>` with your OS username, and save it. You should now see the "RaCAM" file icon as a camera case after a restart. You should enter the username profile currently in use, and that can be found by looking at the path to the Desktop directory (e.g.: `/home/<user>/Desktop`).
+-Unzip the "ResNet50_EoceneRadiolaria.zip" file and place the "ResNet50_EoceneRadiolaria" folder in the "/RaCAM_IS_files/CNN_models" directory.
 
--Double-click on it to start the RaCAM software, you will be prompt to enter your username for updating paths for running the software. You should enter the username profile currently in use, and that can be found by looking at the path to the Desktop directory (e.g.: `/home/<user>/Desktop`).
+-Navigate to the "/RaCAM_IS_files/" directory located on your Desktop, right-click on the RaCAM_IS.py file and select "Thonny" as default application to open this type of file.
 
--Once validated, the software should start successfully and you should be able to see the user interface. The RaCAM software can now be closed as other softwares and packages are required before using it.
+-Right click on the "RaCAM_IS" file located on your Desktop and update lines 3 (Exec=) and 4 (Icon=) by replacing <user> by your OS username (two times total), and save it. You should enter the username profile currently in use, and that can be found by looking at the path to the Desktop directory (e.g.: /home/<user>/Desktop). You should now see the "RaCAM_IS" file icon as a RaCAM camera after a restart of the system.
 
--Check if camera is detected and working properly by opening the terminal and running:
+-Double-click on it to start the RaCAM_IS software, you will be prompt to enter your username for updating paths for running the software. You should enter the username profile currently in use, and that can be found by looking at the path to the Desktop directory (e.g.: "/home/<user>/Desktop").
+
+-Once validated, the software should start successfully and you should be able to see the user interface. The RaCAM_IS software can now be closed as other softwares and packages are required before using it.
+
+-Check if camera is detected and working properly by opening a new terminal window then running:
 ```
   rpicam-hello --timeout 0
 ```
@@ -77,14 +84,14 @@ Install ImageJ:
 
 -Open a file manager window, navigate to the "Edit" menu: "Preferences" and select "Don't ask option on launch of executable files" in the "General" tab.
 
--Go into the `home/<user>/.imagej` directory.
+-Go into the `/home/<user>/.imagej/` directory.
 
--Copy the "AutoDiato_RaCAMx40.ijm" and "Adjustable_Watershed.class" files (located in `/home/<user>/Desktop/RaCAM_files/imagej_plugins`) into the `home/<user>/.imagej/macros` and `home/<user>/.imagej/plugins`, respectively.
+-Copy the "AutoRadio_RaCAMx10.ijm" and "Adjustable_Watershed.class" files (located in `/home/<user>/Desktop/RaCAM_IS_files/imagej_plugins/`) into the `/home/<user>/.imagej/macros/` and `/home/<user>/.imagej/plugins/`, respectively.
 
 
 Download and install Miniconda3:
 
--Run and Follow instructions during Miniconda3 installation. Answer "yes" to the licence terms, and install it in the default location (`/home/<user>/miniconda3`), and answer "yes" when ask to proceed to initilization. After installing Miniconda 3, it is necessary to close the window to initialise it:
+-Open a new terminal window, then run and follow instructions during Miniconda3 installation. Answer "yes" to the licence terms, and install it in the default location (`/home/<user>/miniconda3/`), and answer "yes" when ask to proceed to initilization::
 ```
   wget repo.anaconda.com
   wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh
@@ -93,7 +100,7 @@ Download and install Miniconda3:
 
 Install packages in Miniconda3 environment:
 
--Run and accept main terms of service and proceed to installation:
+-Open a new terminal window, then run and accept main terms of service and proceed to installation:
 ```
   conda create -n miso-onnx python=3.11
   conda activate miso-onnx
@@ -107,14 +114,24 @@ Install packages in Miniconda3 environment:
 
 -Check if miso-onnx installation is successfull by running:
 ```
-miso-onnx classify --network-info /home/<user>/Desktop/RaCAM_files/CNN_models/ResNet50_EoceneRadiolaria/model_onnx/network_info.xml --images /home/<user>/Desktop/RaCAM_files/CNN_models/ResNet50_EoceneRadiolaria/simple_test/unlabeled_images --output-csv /home/<user>/Desktop/RaCAM_files/CNN_models/ResNet50_EoceneRadiolaria/simple_test/prediction_file/predictions.csv
+miso-onnx classify --network-info /home/<user>/Desktop/RaCAM_IS_files/CNN_models/ResNet50_EoceneRadiolaria/model_onnx/network_info.xml --images /home/<user>/Desktop/RaCAM_IS_files/CNN_models/ResNet50_EoceneRadiolaria/simple_test/unlabeled_images --output-csv /home/<user>/Desktop/RaCAM_IS_files/CNN_models/ResNet50_EoceneRadiolaria/simple_test/prediction_file/predictions.csv
 ```
 
--This should generate a csv file located in `/RaCAM_files/CNN_models/ResNet50_EoceneRadiolaria/simple_test/prediction_file`
-
-For more information about the use of onnx model for recognition workflow, visit: https://github.com/microfossil/particle-classification-onnx
+-This should generate a csv file located in `/RaCAM_IS_files/CNN_models/ResNet50_EoceneRadiolaria/simple_test/prediction_file/`
 
 ![RaCAM5](Pictures/RaCAM5.png "RaCAM5")
+
+
+
+## Getting started: RaCAM_OD Installation
+
+![RaCAM12](Pictures/RaCAM12.jpg "RaCAM12")
+
+Softwares / packages be installed on the Raspberry Pi 5 board for the RaCAM_OD software to work:
+
+
+
+
 
 
 # miso-onnx
