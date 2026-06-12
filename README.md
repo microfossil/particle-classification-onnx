@@ -15,7 +15,6 @@ The "RaCAM: A Recognition-assisted Camera for Automated Microscopy" manuscript i
 
 ![RaCAM](Pictures/RaCAM.jpg "RaCAM")
 
-![RaCAM14](Pictures/RaCAM14.png "RaCAM14")
 
 
 ## Getting started: Downloadable files and hardware
@@ -29,6 +28,8 @@ The <a href="https://github.com/microfossil/particle-classification-onnx/blob/ma
 The <a href="https://github.com/microfossil/particle-classification-onnx/blob/main/RaCAM_IS_software.zip">RaCAM_IS_software.zip</a> (containing the RaCAM_IS software, ImageJ scripts, and miso-onnx library to run image segmentation), and the <a href="https://github.com/microfossil/particle-classification-onnx/blob/main/RaCAM_OD_software.zip">RaCAM_OD_software.zip</a> (containing the RaCAM_OD software and .onnx model example to run still image and live stream object detection) are protected under <a href="https://www.gnu.org/licenses/gpl-3.0.html">GNU GPLv.3 license</a> (Copyright © 2026 <a href="https://www.gns.cri.nz/about-us/staff-search/martin-tetard/">Martin Tetard</a>). This license allows users to freely run, share, and modify software while requiring that any modified versions be distributed under the same license terms, including the disclosure of source code.
 
 <img src="https://www.gnu.org/graphics/gplv3-or-later.png" width="120">
+
+![RaCAM14](Pictures/RaCAM14.png "RaCAM14")
 
 
 <a href="https://github.com/microfossil/particle-classification-onnx/blob/main/RaCAM_3D_files.zip">RaCAM_3D_files.zip</a>: file containing 3D models of camera sensor adaptors and camera cases is also available to download to print your own. These 3D designs allow users to 3D-print (preferably using resin), cases for the Raspberry Pi 5 Board, and adaptors to attach camera modules to the board case, and screw then on the C/CS-mount of a microscope. Different adaptor versions are available in the "RaCAM_3D_files.zip" file: A HQ Camera version; a CS-mount threaded version for Camera module V2 and AI camera; a C-mount threaded version for Camera module V2 and AI camera; and a C-mount-adaptor version for Camera module V2 and AI camera. Two versions of the camera cases are also available to be 3D printed.
