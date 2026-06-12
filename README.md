@@ -37,7 +37,10 @@ The <a href="https://github.com/microfossil/particle-classification-onnx/blob/ma
 
 ## Getting started: RaCAM_IS Installation
 
+Image segmentation: Using the RaCAM_IS software, the user can perform image acquisition, and / or automated image processing (segmentation using ImageJ), and / or automated object recognition of the segmented images using trained CNNs. Original, segmented, and classified images can be saved. The software can also perform batch image segmentation and / or object recognition of existing images, and generate summary census data files compiling taxa counts for every sample of a core:
+
 ![RaCAM11](Pictures/RaCAM11.jpg "RaCAM11")
+
 
 Softwares / packages be installed on the Raspberry Pi 5 board for the RaCAM_IS software to work:
 
@@ -126,7 +129,14 @@ miso-onnx classify --network-info /home/<user>/Desktop/RaCAM_IS_files/CNN_models
 
 ## Getting started: RaCAM_OD Installation
 
+Still image detection: Using the RaCAM_OD software, the user can perform image acquisition, and automated object detection directly on captured field of views using a trained .onnx YOLO model. Original and annotated field of view images can be saved, as well as census data txt files for each samples. The software can also perform batch object detection for existing field of view images, and generate summary census data files compiling taxa counts for every sample of a core:
+
 ![RaCAM12](Pictures/RaCAM12.jpg "RaCAM12")
+
+Live stream detection: Using the RaCAM_OD software, the user can also perform live stream object detection using the same .onnx YOLO model. The software is also capable of automatically capture images when a target species is detected:
+
+![RaCAM13](Pictures/RaCAM13.gif "RaCAM13")
+
 
 Softwares / packages be installed on the Raspberry Pi 5 board for the RaCAM_OD software to work:
 
@@ -184,13 +194,6 @@ Run a test inference using the provided trained onnx model:
 -Select "Image acquisition: No" and "Object detection: Yes", then select an .onnx model (located in `/Desktop/RaCAM_OD_files/Exported_models/yolo11n1280_diatoms_test.onnx`)
 -Click on the "Batch processing" button that will prompt you to select and input core directory. Select and enter the `/Desktop/RaCAM_OD_output/Image_acquisition/Core_name/` directory and click "Ok".
 -When the batch processing is done, you should now see a labeled image containing annotated diatom taxa in the `/Desktop/RaCAM_OD_output/Image_recognition/` directory, an a census file in the `/Desktop/RaCAM_OD_output/Raw_census_data/` directory.
-
-
-
-##Live stream detection:
-
-
-![RaCAM13](Pictures/RaCAM13.gif "RaCAM13")
 
 
 
