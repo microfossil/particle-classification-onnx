@@ -53,17 +53,18 @@ Install python packages:
   sudo apt install python3-pil.imagetk
 ```
 
+
 Download and unzip the "Racam_IS_software.zip" and "ResNet50_EoceneRadiolaria.zip" files: 
 
 -Unzip the "Racam_IS_software.zip" file on your Desktop and ensure that the "RaCAM_IS" file, and "/RaCAM_IS_files/" and "/RaCAM_IS_output/" folders are located on your Desktop.
 
--Unzip the "ResNet50_EoceneRadiolaria.zip" file and place the "ResNet50_EoceneRadiolaria" folder in the "/RaCAM_IS_files/CNN_models" directory.
+-Unzip the "ResNet50_EoceneRadiolaria.zip" file and place the "ResNet50_EoceneRadiolaria" folder in the `/RaCAM_IS_files/CNN_models/` directory.
 
--Navigate to the "/RaCAM_IS_files/" directory located on your Desktop, right-click on the RaCAM_IS.py file and select "Thonny" as default application to open this type of file.
+-Navigate to the `/RaCAM_IS_files/` directory located on your Desktop, right-click on the RaCAM_IS.py file and select "Thonny" as default application to open this type of file.
 
 -Right click on the "RaCAM_IS" file located on your Desktop and update lines 3 (Exec=) and 4 (Icon=) by replacing <user> by your OS username (two times total), and save it. You should enter the username profile currently in use, and that can be found by looking at the path to the Desktop directory (e.g.: /home/<user>/Desktop). You should now see the "RaCAM_IS" file icon as a RaCAM camera after a restart of the system.
 
--Double-click on it to start the RaCAM_IS software, you will be prompt to enter your username for updating paths for running the software. You should enter the username profile currently in use, and that can be found by looking at the path to the Desktop directory (e.g.: "/home/<user>/Desktop").
+-Double-click on it to start the RaCAM_IS software, you will be prompt to enter your username for updating paths for running the software. You should enter the username profile currently in use, and that can be found by looking at the path to the Desktop directory (e.g.: `/home/<user>/Desktop`).
 
 -Once validated, the software should start successfully and you should be able to see the user interface. The RaCAM_IS software can now be closed as other softwares and packages are required before using it.
 
@@ -71,6 +72,7 @@ Download and unzip the "Racam_IS_software.zip" and "ResNet50_EoceneRadiolaria.zi
 ```
   rpicam-hello --timeout 0
 ```
+
 Then you can use "Ctrl+C" in the terminal window, or simply the close button on the preview window to stop rpicam-hello.
 
 
@@ -97,6 +99,7 @@ Download and install Miniconda3:
   wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh
   bash ~/Miniconda3-latest-Linux-aarch64.sh
 ```
+
 
 Install packages in Miniconda3 environment:
 
@@ -127,9 +130,64 @@ miso-onnx classify --network-info /home/<user>/Desktop/RaCAM_IS_files/CNN_models
 
 Softwares / packages be installed on the Raspberry Pi 5 board for the RaCAM_OD software to work:
 
+Install python packages:
+
+-Open a new terminal window, then run:
+```
+sudo apt update
+sudo apt upgrade
+sudo apt install python3-pip
+sudo apt install python3-tk
+sudo apt install python3-pil
+sudo apt install python3-pil.imagetk
+```
 
 
-Live stream detection:
+Download and unzip the "Racam_OD_software.zip" file: 
+
+-Unzip the "Racam_OD_software.zip" file on your Desktop and ensure that the "RaCAM_OD" file, and "/RaCAM_OD_files" and "/RaCAM_OD_output" folders are located on your Desktop.
+
+-Navigate to the `/RaCAM_OD_files/` directory located on your Desktop, right-click on the RaCAM_OD.py file and select "Thonny" as default application to open this type of file.
+
+-Right click on the "RaCAM_OD" file located on your Desktop and update lines 3 (Exec=) and 4 (Icon=) by replacing <user> by your OS username (three times total), and save it. You should enter the username profile currently in use, and that can be found by looking at the path to the Desktop directory (e.g.: `/home/<user>/Desktop/`). You should now see the "RaCAM_OD" file icon as a RaCAM camera after a restart of your system.
+
+-Double-click on it to start the RaCAM_OD software, you will be prompt to enter your username for updating paths for running the software. You should enter the username profile currently in use, and that can be found by looking at the path to the Desktop directory (e.g.: `/home/<user>/Desktop/`).
+
+-Once validated, the software should start successfully and you should be able to see the user interface. The RaCAM_OD software can now be closed as other softwares and packages are required before using it.
+
+-Check if camera is detected and working properly by opening a new terminal window,then running:
+`rpicam-hello --timeout 0`
+
+Then you can use "Ctrl+C" in the terminal window, or simply the close button on the preview window to stop rpicam-hello.
+
+
+Create virtual environment, and install ultralytics and onnxruntime packages:
+
+-Open a new terminal window, then run and accept main terms of service if asked to, and proceed to installation:
+```
+/usr/bin/python3 -m venv --system-site-packages yolo_OD
+source yolo_OD/bin/activate
+sudo apt update
+sudo apt install python3-pip -y
+pip install -U pip
+pip install ultralytics[export]
+pip install numpy picamera2 onnxruntime
+```
+
+The ultralytics package install might be long, you can close the terminal afterward.
+
+
+Run a test inference using the provided trained onnx model:
+
+-Copy the complete "/Core_name/" folder from `/Desktop/RaCAM_OD_files//Test_inference/` into `/Desktop/RaCAM_OD_output/Image_acquisition/`.
+-Double click on the "RaCAM_OD" software located on your Desktop to start it:
+-Select "Image acquisition: No" and "Object detection: Yes", then select an .onnx model (located in `/Desktop/RaCAM_OD_files/Exported_models/yolo11n1280_diatoms_test.onnx`)
+-Click on the "Batch processing" button that will prompt you to select and input core directory. Select and enter the `/Desktop/RaCAM_OD_output/Image_acquisition/Core_name/` directory and click "Ok".
+-When the batch processing is done, you should now see a labeled image containing annotated diatom taxa in the `/Desktop/RaCAM_OD_output/Image_recognition/` directory, an a census file in the `/Desktop/RaCAM_OD_output/Raw_census_data/` directory.
+
+
+
+##Live stream detection:
 
 
 ![RaCAM13](Pictures/RaCAM13.gif "RaCAM13")
