@@ -203,6 +203,8 @@ Run a test inference using the provided trained onnx model:
 
 
 
+# Below is the original miso-onnx code, you should not have to directly use it, unless you want to further development using this technique.
+
 # miso-onnx
 
 Inference using ONNX for image classification
