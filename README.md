@@ -119,8 +119,6 @@ miso-onnx classify --network-info /home/<user>/Desktop/RaCAM_IS_files/CNN_models
 
 -This should generate a csv file located in `/RaCAM_IS_files/CNN_models/ResNet50_EoceneRadiolaria/simple_test/prediction_file/`
 
-![RaCAM5](Pictures/RaCAM5.png "RaCAM5")
-
 
 
 ## Getting started: RaCAM_OD Installation
@@ -131,6 +129,10 @@ Softwares / packages be installed on the Raspberry Pi 5 board for the RaCAM_OD s
 
 
 
+Live stream detection:
+
+
+![RaCAM13](Pictures/RaCAM13.gif "RaCAM13")
 
 
 
