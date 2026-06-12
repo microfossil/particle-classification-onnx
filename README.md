@@ -2,7 +2,9 @@
 
 ![RaCAM7](Pictures/RaCAM7.png "RaCAM7")
 
-RaCAM is a new, open-source, affordable, AI-assisted, Raspberry Pi-powered camera, with the two first, built-in, and fully automated microscopy workflows that fits on any microscope equipped with a C-mount (or CS-mount) camera thread. This camera is equipped with an Raspberry Pi 5 and a high-resolution camera sensor (12.3 mp). It is capable of performing automated microscopy, including microfossils / microscopic objects recognition through two different workflows that might be more efficient and adapted to specific microscopic objects. These workflows rely on (1) image segmentation (RaCAM_IS software, including image acquisition, and automated processing and recognition), and (2) object detection (RaCAM_OD software including image acquisition and automated still image / live stream object detection using YOLO models), respectively.
+RaCAM is a new, open-source, affordable, AI-assisted, Raspberry Pi-powered camera, with the two first, built-in, and fully automated microscopy workflows that fits on any microscope equipped with a C-mount (or CS-mount) camera thread. This camera is equipped with an Raspberry Pi 5 and a high-resolution camera sensor (12.3 mp). It is capable of performing automated microscopy, including microfossils / microscopic objects recognition through two different, yet complementary workflows that can be more adapted to your needs, depending on the specific microscopic objects you are working on, and goals you want to achieve. These workflows rely on:
+-(1) image segmentation (RaCAM_IS software, including image acquisition, and automated processing and recognition),
+-(2) object detection (RaCAM_OD software including image acquisition and automated still image / live stream object detection using YOLO models), respectively.
 
 The "RaCAM: A Recognition-assisted Camera for Automated Microscopy" manuscript is now <a href="https://egusphere.copernicus.org/preprints/2026/egusphere-2026-2075/">available as a preprint in Biogeosciences</a>!
 
