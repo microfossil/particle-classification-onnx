@@ -43,7 +43,7 @@ The <a href="https://github.com/microfossil/particle-classification-onnx/blob/ma
 
 ## Getting started: *RaCAM<sub>IS</sub>* Installation
 
-Image segmentation: Using the *RaCAM<sub>IS</sub>* software, the user can perform image acquisition, and / or automated image processing (segmentation using ImageJ), and / or automated object recognition of the segmented images using trained CNNs. Original, segmented, and classified images can be saved. The software can also perform batch image segmentation and / or object recognition of existing images, and generate summary census data files compiling taxa counts for every sample of a core:
+**Image segmentation**: Using the *RaCAM<sub>IS</sub>* software, the user can perform image acquisition, and / or automated image processing (segmentation using ImageJ), and / or automated object recognition of the segmented images using trained CNNs. Original, segmented, and classified images can be saved. The software can also perform batch image segmentation and / or object recognition of existing images, and generate summary census data files compiling taxa counts for every sample of a core:
 
 ![RaCAM11](Pictures/RaCAM11.jpg "RaCAM11")
 
@@ -135,11 +135,11 @@ miso-onnx classify --network-info /home/<user>/Desktop/RaCAM_IS_files/CNN_models
 
 ## Getting started: *RaCAM<sub>OD</sub>* Installation
 
-Still image detection: Using the *RaCAM<sub>OD</sub>* software, the user can perform image acquisition, and automated object detection directly on captured field of views using a trained .onnx YOLO model. Original and annotated field of view images can be saved, as well as census data txt files for each samples. The software can also perform batch object detection for existing field of view images, and generate summary census data files compiling taxa counts for every sample of a core:
+**Still image detection**: Using the *RaCAM<sub>OD</sub>* software, the user can perform image acquisition, and automated object detection directly on captured field of views using a trained .onnx YOLO model. Original and annotated field of view images can be saved, as well as census data txt files for each samples. The software can also perform batch object detection for existing field of view images, and generate summary census data files compiling taxa counts for every sample of a core:
 
 ![RaCAM12](Pictures/RaCAM12.jpg "RaCAM12")
 
-Live stream detection: Using the *RaCAM<sub>OD</sub>* software, the user can also perform live stream object detection using the same .onnx YOLO model. The software is also capable of automatically capture images when a target species is detected:
+**Live stream detection**: Using the *RaCAM<sub>OD</sub>* software, the user can also perform live stream object detection using the same .onnx YOLO model. The software is also capable of automatically capture images when a target species is detected:
 
 ![RaCAM13](Pictures/RaCAM13.gif "RaCAM13")
 
