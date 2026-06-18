@@ -41,7 +41,7 @@ The <a href="https://github.com/microfossil/particle-classification-onnx/blob/ma
 ![RaCAM3](Pictures/RaCAM3.jpg "RaCAM3")
 
 
-## Getting started: *RaCAM<sub>IS</sub>* Installation
+## Workflow 1: Image segmentation workflow using *RaCAM<sub>IS</sub>*
 
 **Image segmentation**: Using the *RaCAM<sub>IS</sub>* software, the user can perform image acquisition, and / or automated image processing (segmentation using ImageJ), and / or automated object recognition of the segmented images using trained CNNs. Original, segmented, and classified images can be saved. The software can also perform batch image segmentation and / or object recognition of existing images, and generate summary census data files compiling taxa counts for every sample of a core:
 
@@ -133,7 +133,7 @@ miso-onnx classify --network-info /home/<user>/Desktop/RaCAM_IS_files/CNN_models
 
 
 
-## Getting started: *RaCAM<sub>OD</sub>* Installation
+## Workflow 2: Object detection workflow using *RaCAM<sub>OD</sub>*
 
 **Still image detection**: Using the *RaCAM<sub>OD</sub>* software, the user can perform image acquisition, and automated object detection directly on captured field of views using a trained .onnx YOLO model. Original and annotated field of view images can be saved, as well as census data txt files for each samples. The software can also perform batch object detection for existing field of view images, and generate summary census data files compiling taxa counts for every sample of a core:
 
