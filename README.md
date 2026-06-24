@@ -199,7 +199,7 @@ Run a test inference using the provided trained onnx model:
 -Double click on the "RaCAM_OD" software located on your Desktop to start it:
 -Select "Image acquisition: No" and "Object detection: Yes", then select an .onnx model (located in `/Desktop/RaCAM_OD_files/Exported_models/yolo11n1280_diatoms_test.onnx`)
 -Click on the "Batch processing" button that will prompt you to select and input core directory. Select and enter the `/Desktop/RaCAM_OD_output/Image_acquisition/Core_name/` directory and click "Ok".
--When the batch processing is done, you should now see a labeled image containing annotated diatom taxa in the `/Desktop/RaCAM_OD_output/Image_recognition/` directory, an a census file in the `/Desktop/RaCAM_OD_output/Raw_census_data/` directory.
+-When the batch processing is done, you should now see a labeled image containing annotated diatom taxa in the `/Desktop/RaCAM_OD_output/Image_recognition/` directory, and a census file in the `/Desktop/RaCAM_OD_output/Raw_census_data/` directory.
 
 
 
