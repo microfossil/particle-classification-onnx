@@ -15,6 +15,8 @@ The "RaCAM: A Recognition-assisted Camera for Automated Microscopy" manuscript i
 
 ![RaCAM](Pictures/RaCAM.jpg "RaCAM")
 
+<a href="https://www.youtube.com/watch?v=j_-oOjOW-es"><img src="Pictures/RaCAMYOU.jpg" alt="Alt Text" width="200"></a>
+
 
 
 ## Getting started: Downloadable files and hardware
