@@ -71,7 +71,7 @@ Download and unzip the "Racam_IS_software.zip" and "ResNet50_EoceneRadiolaria.zi
 
 -Navigate to the `/RaCAM_IS_files/` directory located on your Desktop, right-click on the RaCAM_IS.py file and select "Thonny" as default application to open this type of file.
 
--Right click on the "RaCAM_IS" file located on your Desktop and update lines 3 (Exec=) and 4 (Icon=) by replacing <user> by your OS username (two times total), and save it. You should enter the username profile currently in use, and that can be found by looking at the path to the Desktop directory (e.g.: /home/<user>/Desktop). You should now see the "RaCAM_IS" file icon as a RaCAM camera after a restart of the system.
+-Right click on the "RaCAM_IS" file located on your Desktop to open it with a text editor, and update lines 3 (Exec=) and 4 (Icon=) by replacing <user> by your OS username (two times total), and save it. You should enter the username profile currently in use, and that can be found by looking at the path to the Desktop directory (e.g.: /home/<user>/Desktop). You should now see the "RaCAM_IS" file icon as a RaCAM camera after a restart of the system.
 
 -Double-click on it to start the RaCAM_IS software, you will be prompt to enter your username for updating paths for running the software. You should enter the username profile currently in use, and that can be found by looking at the path to the Desktop directory (e.g.: `/home/<user>/Desktop`).
 
@@ -165,7 +165,7 @@ Download and unzip the "Racam_OD_software.zip" file:
 
 -Navigate to the `/RaCAM_OD_files/` directory located on your Desktop, right-click on the RaCAM_OD.py file and select "Thonny" as default application to open this type of file.
 
--Right click on the "RaCAM_OD" file located on your Desktop and update lines 3 (Exec=) and 4 (Icon=) by replacing <user> by your OS username (three times total), and save it. You should enter the username profile currently in use, and that can be found by looking at the path to the Desktop directory (e.g.: `/home/<user>/Desktop/`). You should now see the "RaCAM_OD" file icon as a RaCAM camera after a restart of your system.
+-Right click on the "RaCAM_OD" file located on your Desktop to open it with a text editor, and update lines 3 (Exec=) and 4 (Icon=) by replacing <user> by your OS username (three times total), and save it. You should enter the username profile currently in use, and that can be found by looking at the path to the Desktop directory (e.g.: `/home/<user>/Desktop/`). You should now see the "RaCAM_OD" file icon as a RaCAM camera after a restart of your system.
 
 -Double-click on it to start the RaCAM_OD software, you will be prompt to enter your username for updating paths for running the software. You should enter the username profile currently in use, and that can be found by looking at the path to the Desktop directory (e.g.: `/home/<user>/Desktop/`).
 
