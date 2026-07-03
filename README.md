@@ -11,7 +11,11 @@ RaCAM is a **new**, **open-source**, **affordable**, and **AI-assisted** Raspber
 
 The "RaCAM: A Recognition-assisted Camera for Automated Microscopy" manuscript is now <a href="https://egusphere.copernicus.org/preprints/2026/egusphere-2026-2075/">available as a preprint in Biogeosciences</a>!
 
-![RaCAM2](Pictures/RaCAM2.jpg "RaCAM2")
+<!-- ![RaCAM2](Pictures/RaCAM2.jpg "RaCAM2") -->
+
+![RaCAM20](Pictures/RaCAM20.jpg "RaCAM")
+
+![RaCAM21](Pictures/RaCAM21.jpg "RaCAM")
 
 ![RaCAM](Pictures/RaCAM.jpg "RaCAM")
 
