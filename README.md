@@ -1,4 +1,4 @@
-# NEW: RaCAM: A Recognition-assisted Camera for Automated Microscopy
+# New overview: RaCAM: A Recognition-assisted Camera for Automated Microscopy
 
 ![RaCAM7](Pictures/RaCAM7.png "RaCAM7")
 
@@ -20,6 +20,14 @@ The "RaCAM: A Recognition-assisted Camera for Automated Microscopy" manuscript i
 ![RaCAM](Pictures/RaCAM.jpg "RaCAM")
 
 <a href="https://www.youtube.com/watch?v=j_-oOjOW-es"><img src="Pictures/RaCAMYOU.jpg" alt="https://www.youtube.com/watch?v=j_-oOjOW-es" width="640"></a>
+
+
+
+## Getting started: How to assemble your own RaCAM camera
+
+A list of all required parts is available to download here: <a href="https://github.com/microfossil/particle-classification-onnx/blob/main/BOM_List_RaCAM.xlsx">BOM_List_RaCAM.xlsx</a>.
+
+Below is a tutorial video showing how to assemble the micro-SD card version of the RaCAM. If you choose to make an NVMe SSD version, the process is very similar, just use an SSD and PCIe M.2 SSD / Fan adaptor instead of the regular fan used in the video.
 
 <a href="https://www.youtube.com/watch?v=yXDWQaqzsHs"><img src="Pictures/RaCAMYOU2.jpg" alt="https://www.youtube.com/watch?v=yXDWQaqzsHs" width="640"></a>
 
