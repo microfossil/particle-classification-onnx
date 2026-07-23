@@ -13,9 +13,9 @@ The "RaCAM: A Recognition-assisted Camera for Automated Microscopy" manuscript i
 
 <!-- ![RaCAM2](Pictures/RaCAM2.jpg "RaCAM2") -->
 
-![RaCAM20](Pictures/RaCAM20.jpg "RaCAM")
+![RaCAM22](Pictures/RaCAM22.jpg "RaCAM")
 
-![RaCAM21](Pictures/RaCAM21.jpg "RaCAM")
+![RaCAM23](Pictures/RaCAM23.jpg "RaCAM")
 
 ![RaCAM](Pictures/RaCAM.jpg "RaCAM")
 
