@@ -153,13 +153,13 @@ miso-onnx classify --network-info /home/<user>/Desktop/RaCAM_IS_files/CNN_models
 
 -Open the software
 
--On the first row of buttons, select the operation you wish to perform (“Image acquisition” and / or “Image segmentation” and / or “Object recognition”)
+-In the first row of buttons, select the operation you wish to perform (“Image acquisition” and / or “Image segmentation” and / or “Object recognition”)
 
--On the second row, select the corresponding saving folder / imagej script / CNN model network_info.xml file depending on the requested operations (e.g. you don’t need to select an imagej script or CNN model if you only want to perform image acquisition; you can keep the saving folder by default).
+-In the second row, select the corresponding saving folder / imagej script / CNN model network_info.xml file depending on the requested operations (e.g. you don’t need to select an imagej script or CNN model if you only want to perform image acquisition; you can keep the saving folder by default).
 
--On the third row, fill in information about the core, sample and magnification you are using. These can account for other metadata if you are not using a core and sample format. If the magnification is not in the dropdown list, you can directly write it (providing magnification has no impact on any data processing, it is just a metadata that will be written in the filename).
+-In the third row, fill in information about the core, sample and magnification you are using. These can account for other metadata if you are not using a core and sample format. If the magnification is not in the dropdown list, you can directly write it (providing magnification has no impact on any data processing, it is just a metadata that will be written in the filename).
 
--On the fourth, fifth and sixth rows, adjust the parameters as you need. More information about each parameter can be found in the “Instructions” tab directly on the software.
+-In the fourth, fifth and sixth rows, adjust the parameters as you need. More information about each parameter can be found in the “Instructions” tab directly in the software.
 
 -The “Save profile” and “Load profile” can be used to save all these parameters before shutting down the software. Only one profile can be saved.
 
@@ -167,7 +167,7 @@ miso-onnx classify --network-info /home/<user>/Desktop/RaCAM_IS_files/CNN_models
 
 -Clicking on the “Snapshot” button captures an image and saves it in the “saving folder” (again, we recommend keeping the saving folder by default on the Desktop). The image will be saved in the `/Desktop/RaCAM_IS_output/Image_acquisition/` directory following the core name and sample name provided. If you also selected “Image segmentation”: “Yes”, and / or “Image recognition”:  Yes”, the corresponding images will also be saved in the `/Desktop/RaCAM_IS_output/Image_processing/` and `/Desktop/RaCAM_IS_output/Image_recognition/` directories, respectively.
 
--Clicking on the “Batch processing” button allows you to process an existing batch of image (either do segmentation on a batch of existing original FOV images, or identify a batch of segmented images, or both) by unselecting “Image_acquisition” and selecting “Image_processing” and / or “Image_recognition”: “Yes”. You will be asked to choose and enter a folder, which should be a “core” directory containing “sample” directories, containing images.
+-Clicking on the “Batch processing” button allows you to process an existing batch of images (either do segmentation on a batch of existing original FOV images, or identify a batch of segmented images, or both) by unselecting “Image_acquisition” and selecting “Image_processing” and / or “Image_recognition”: “Yes”. You will be asked to choose and enter a folder, which should be a “core” directory containing “sample” directories, containing images.
 
 -Clicking the “Census data” button generates a census table containing taxa in columns and samples in rows, by counting the number of images located in “class” subdirectories in “sample” directories in the `/Desktop/RaCAM_IS_output/Temp/` directory automatically generated when automated recognition is performed. After performing the census counting, this directory is automatically deleted.
 
@@ -247,13 +247,13 @@ Run a test inference using the provided trained onnx model:
 
 -Open the software
 
--On the first row of buttons, select the operation you wish to perform: “Image acquisition” and / or “Object detection” and / or “Show annotated images” (that will automatically open the annotated images after automated acquisition and object detection for manual control).
+-In the first row of buttons, select the operation you wish to perform: “Image acquisition” and / or “Object detection” and / or “Show annotated images” (that will automatically open the annotated images after automated acquisition and object detection for manual control).
 
--On the second row, select the corresponding saving folder and / or .onnx model file and confidence threshold for object detection depending on the requested operations (e.g. you don’t need to select an .onnx model if you only want to perform image acquisition; you can keep the saving folder by default).
+-In the second row, select the corresponding saving folder and / or .onnx model file and confidence threshold for object detection depending on the requested operations (e.g. you don’t need to select an .onnx model if you only want to perform image acquisition; you can keep the saving folder by default).
 
--On the third row, fill in informations about the core, sample and magnification you are using. These can account for other metadata if you are not using a core and sample format. If the magnification is not in the dropdown list, you can directly write it (providing magnification has no impact on any data processing, it is just a metadata that will be written in the filename).
+-In the third row, fill in informations about the core, sample and magnification you are using. These can account for other metadata if you are not using a core and sample format. If the magnification is not in the dropdown list, you can directly write it (providing magnification has no impact on any data processing, it is just a metadata that will be written in the filename).
 
--On the fourth and fifth rows, adjust the parameters as you need. More information about each parameter can be found in the “Instructions” tab directly on the software.
+-In the fourth and fifth rows, adjust the parameters as you need. More information about each parameter can be found in the “Instructions” tab directly in the software.
 
 -The “Save profile” and “Load profile” can be used to save all these parameters before shutting down the software. Only one profile can be saved.
 
@@ -263,9 +263,9 @@ Run a test inference using the provided trained onnx model:
 
 -Clicking on the “Snapshot” button captures an image and saves it in the “saving folder” (again, we recommend keeping the saving folder by default on the Desktop). The image will be saved in the `/Desktop/RaCAM_OD_output/Image_acquisition/` directory following the core name and sample name provided. If you also select “Object detection”: “Yes”, the corresponding images will be saved in the `/Desktop/RaCAM_OD_output/Image_recognition/` directory.
 
--Clicking on the “Batch processing” button allow you to process an existing batch of image (do object detection on a batch of existing original FOV images) by unselecting “Image_acquisition” and selecting “Object detection”: “Yes. You will be asked to choose and enter a folder, which should be a “core” directory containing “sample” directories, containing images.
+-Clicking on the “Batch processing” button allows you to process an existing batch of images (do object detection on a batch of existing original FOV images) by unselecting “Image_acquisition” and selecting “Object detection”: “Yes. You will be asked to choose and enter a folder, which should be a “core” directory containing “sample” directories, containing images.
 
--Clicking the “Census data” button will generate a census table containing taxa in columns and samples in rows, by compiling the individual .txt files generated during the object detection step for each FOV image and located in the `/Desktop/RaCAM_OD_output/Raw_census_data/` directory.
+-Clicking the “Census data” button generates a census table containing taxa in columns and samples in rows, by compiling the individual .txt files generated during the object detection step for each FOV image and located in the `/Desktop/RaCAM_OD_output/Raw_census_data/` directory.
 
 
 
