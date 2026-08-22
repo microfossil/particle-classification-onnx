@@ -63,6 +63,7 @@ The <a href="https://github.com/microfossil/particle-classification-onnx/blob/ma
 
 ![RaCAM11](Pictures/RaCAM11.jpg "RaCAM11")
 
+**Install**:
 
 Softwares / packages be installed on the Raspberry Pi 5 board for the *RaCAM<sub>IS</sub>* software to work:
 
@@ -148,6 +149,29 @@ miso-onnx classify --network-info /home/<user>/Desktop/RaCAM_IS_files/CNN_models
 -This should generate a csv file located in `/RaCAM_IS_files/CNN_models/ResNet50_EoceneRadiolaria/simple_test/prediction_file/`
 
 
+**How to use the *RaCAM<sub>IS</sub>***:
+
+-Open the software
+
+-On the first row of buttons, select the operation you wish to perform (“Image acquisition” and / or “Image segmentation” and / or “Object recognition”)
+
+-On the second row, select the corresponding saving folder / imagej script / CNN model network_info.xml file depending on the requested operations (e.g. you don’t need to select an imagej script or CNN model if you only want to perform image acquisition; you can keep the saving folder by default).
+
+-On the third row, fill in information about the core, sample and magnification you are using. These can account for other metadata if you are not using a core and sample format. If the magnification is not in the dropdown list, you can directly write it (providing magnification has no impact on any data processing, it is just a metadata that will be written in the filename).
+
+-On the fourth, fifth and sixth rows, adjust the parameters as you need. More information about each parameter can be found in the “Instructions” tab directly on the software.
+
+-The “Save profile” and “Load profile” can be used to save all these parameters before shutting down the software. Only one profile can be saved.
+
+-Clicking on the “Live preview” button shows a livestream preview from your microscope so you can adjust the parameters, focal depth and slide position before capturing and saving an image. The preview window needs to be closed before using any other function.
+
+-Clicking on the “Snapshot” button captures an image and saves it in the “saving folder” (again, we recommend keeping the saving folder by default on the Desktop). The image will be saved in the `/Desktop/RaCAM_IS_output/Image_acquisition/` directory following the core name and sample name provided. If you also selected “Image segmentation”: “Yes”, and / or “Image recognition”:  Yes”, the corresponding images will also be saved in the `/Desktop/RaCAM_IS_output/Image_processing/` and `/Desktop/RaCAM_IS_output/Image_recognition/` directories, respectively.
+
+-Clicking on the “Batch processing” button allows you to process an existing batch of image (either do segmentation on a batch of existing original FOV images, or identify a batch of segmented images, or both) by unselecting “Image_acquisition” and selecting “Image_processing” and / or “Image_recognition”: “Yes”. You will be asked to choose and enter a folder, which should be a “core” directory containing “sample” directories, containing images.
+
+-Clicking the “Census data” button generates a census table containing taxa in columns and samples in rows, by counting the number of images located in “class” subdirectories in “sample” directories in the `/Desktop/RaCAM_IS_output/Temp/` directory automatically generated when automated recognition is performed. After performing the census counting, this directory is automatically deleted.
+
+
 
 ## Workflow 2: Object detection workflow using *RaCAM<sub>OD</sub>*
 
@@ -159,6 +183,7 @@ miso-onnx classify --network-info /home/<user>/Desktop/RaCAM_IS_files/CNN_models
 
 ![RaCAM13](Pictures/RaCAM13.gif "RaCAM13")
 
+**Install**:
 
 Softwares / packages be installed on the Raspberry Pi 5 board for the *RaCAM<sub>OD</sub>* software to work:
 
@@ -216,6 +241,31 @@ Run a test inference using the provided trained onnx model:
 -Select "Image acquisition: No" and "Object detection: Yes", then select an .onnx model (located in `/Desktop/RaCAM_OD_files/Exported_models/yolo11n1280_diatoms_test.onnx`)
 -Click on the "Batch processing" button that will prompt you to select and input core directory. Select and enter the `/Desktop/RaCAM_OD_output/Image_acquisition/Core_name/` directory and click "Ok".
 -When the batch processing is done, you should now see a labeled image containing annotated diatom taxa in the `/Desktop/RaCAM_OD_output/Image_recognition/` directory, and a census file in the `/Desktop/RaCAM_OD_output/Raw_census_data/` directory.
+
+
+**How to use the *RaCAM<sub>OD</sub>***:
+
+-Open the software
+
+-On the first row of buttons, select the operation you wish to perform: “Image acquisition” and / or “Object detection” and / or “Show annotated images” (that will automatically open the annotated images after automated acquisition and object detection for manual control).
+
+-On the second row, select the corresponding saving folder and / or .onnx model file and confidence threshold for object detection depending on the requested operations (e.g. you don’t need to select an .onnx model if you only want to perform image acquisition; you can keep the saving folder by default).
+
+-On the third row, fill in informations about the core, sample and magnification you are using. These can account for other metadata if you are not using a core and sample format. If the magnification is not in the dropdown list, you can directly write it (providing magnification has no impact on any data processing, it is just a metadata that will be written in the filename).
+
+-On the fourth and fifth rows, adjust the parameters as you need. More information about each parameter can be found in the “Instructions” tab directly on the software.
+
+-The “Save profile” and “Load profile” can be used to save all these parameters before shutting down the software. Only one profile can be saved.
+
+-Clicking on the “Live preview” button shows a livestream preview from your microscope so you can adjust the parameters, focal depth and slide position before capturing and saving an image. The preview window needs to be closed before using any other function.
+
+-By selecting “Image acquisition”: “No” and “Object detection”: “Yes”, the “Live preview” button will change to “Live detection”, allowing you to perform automated live detection using a selected .onnx model. A pop-up window will ask you for a target species: if you write a target class name exactly as learnt by the model, a snapshot will automatically be taken by the software every time this target class is detected with a cooldown of 10 seconds, allowing to manually drag the microscopic slide under the microscope and let the system capture images when needed. If you leave this field empty, no image will be captured automatically.
+
+-Clicking on the “Snapshot” button captures an image and saves it in the “saving folder” (again, we recommend keeping the saving folder by default on the Desktop). The image will be saved in the `/Desktop/RaCAM_OD_output/Image_acquisition/` directory following the core name and sample name provided. If you also select “Object detection”: “Yes”, the corresponding images will be saved in the `/Desktop/RaCAM_OD_output/Image_recognition/` directory.
+
+-Clicking on the “Batch processing” button allow you to process an existing batch of image (do object detection on a batch of existing original FOV images) by unselecting “Image_acquisition” and selecting “Object detection”: “Yes. You will be asked to choose and enter a folder, which should be a “core” directory containing “sample” directories, containing images.
+
+-Clicking the “Census data” button will generate a census table containing taxa in columns and samples in rows, by compiling the individual .txt files generated during the object detection step for each FOV image and located in the `/Desktop/RaCAM_OD_output/Raw_census_data/` directory.
 
 
 
