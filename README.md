@@ -45,7 +45,7 @@ The <a href="https://github.com/microfossil/particle-classification-onnx/blob/ma
 
 <img src="https://www.gnu.org/graphics/gplv3-or-later.png" width="120">
 
-![RaCAM14](Pictures/RaCAM14.png "RaCAM14")
+![RaCAM34](Pictures/RaCAM34.png "RaCAM34")
 
 
 <a href="https://github.com/microfossil/particle-classification-onnx/blob/main/RaCAM_3D_files.zip">RaCAM_3D_files.zip</a>: file containing **3D models** of camera sensor adaptors and camera cases is also available to download to print your own. These 3D designs allow users to 3D-print (preferably using resin), cases for the Raspberry Pi 5 Board, and adaptors to attach camera modules to the board case, and screw then on the C/CS-mount of a microscope. Different adaptor versions are available in the "RaCAM_3D_files.zip" file: A HQ Camera version; a CS-mount threaded version for Camera module V2 and AI camera; a C-mount threaded version for Camera module V2 and AI camera; and a C-mount-adaptor version for Camera module V2 and AI camera. Two versions of the camera cases are also available to be 3D printed.
